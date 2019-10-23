@@ -1,5 +1,17 @@
 body {
-    margin: 2em auto;
-    max-width: 60em;
+    margin: 3em auto;
+    max-width: 50em;
     font-family: Verdana, sans-serif;
+}
+
+img.right {
+    width: 40%;
+    float: right
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    border-left: 0.2em solid #ccc;
+    padding: 1em;
 }
