@@ -1,7 +1,9 @@
 body {
-    margin: 3em auto;
-    max-width: 50em;
+    margin: 4em auto;
+    max-width: 40em;
     font-family: Verdana, sans-serif;
+    background-color: #efefef;
+    color: #333;
 }
 
 img.right {
@@ -14,4 +16,9 @@ blockquote {
     font-style: italic;
     border-left: 0.2em solid #ccc;
     padding: 1em;
+}
+
+footer nav {
+    border-top: 2px solid black;
+    margin-top: 4em;
 }
