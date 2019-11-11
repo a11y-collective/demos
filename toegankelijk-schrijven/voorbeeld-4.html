@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toegankelijk schrijven voorbeeld 4</title>
+    <link rel="stylesheet" href="../stylesheet.css" type="text/css" media="all">
+</head>
+
+<body>
+
+    <header role="banner">
+
+        <h1>Navigeren met een toestenbord</h1>
+
+    </header>
+
+    <main>
+
+            <h2>De basis</h2>
+
+            <ul>
+              <li>Tab: Ga naar het volgende element dat focus kan krijgen</li>
+              <li>Shift + Tab: Ga naar het vorige element dat focus kan krijgen</li>
+              <li>Enter of Return: Activeer links en buttons</li>
+              <li>Pijltjes: Navigeer tussen radio burrons en select opties</li>
+              <li>Spactiebalk: Selecteer radio buttons en check boxes</li>
+            </ul>
+
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+
+            <form>
+
+              <h3>Select</h3>
+              <p>Tip: gebruik de pijltjes toesten</p>
+
+              <fieldset>
+              <legend>Hoeveel taartjes lust je?</legend>
+                <label for="amount">Kies een aantal</label>
+                <select name="amount" id="amount">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                </select>
+              </fieldset>
+
+              <h3>Radio buttons</h3>
+              <p>Tip: gebruik de pijltjes toesten</p>
+              <fieldset>
+              <legend>Wat is je t-shirtmaat?</legend>
+                <label for="size">Maat</label>
+                <input checked="checked" name="size" id="size" type="radio" value="small" />Small
+                <input name="size" id="size" type="radio" value="medium" />Medium
+                <input name="size" id="size" type="radio" value="large" />Large
+                <input name="size" id="size" type="radio" value="extra large" />Extra large
+              </fieldset>
+
+              <h3>Check boxes</h3>
+              <p>Tip: gebruik de tab en spatiebalk</p>
+
+              <fieldset>
+              <legend>Welke maten wil je bestellen?</legend>
+                <input id="cb-s" checked="checked" name="size" type="checkbox" value="small" /><label for="cb-s">Small</label>
+                <input id="cb-m" name="size" type="checkbox" value="medium" /><label for="cb-m">Medium</label>
+                <input id="cb-l" name="size" type="checkbox" value="large" /><label for="cb-l">Large</label>
+                <input id="cb-e" name="size" type="checkbox" value="extra large" /><label for="cb-e">Extra large</label>
+              </fieldset>
+
+              <button type="submit">Verstuur!</button>
+
+            </form>
+
+    </main>
+
+    <footer>
+        <nav aria-label="Pagina">
+            <h2>Menu</h2>
+            <ul>
+
+                <li><a href="voorbeeld-3.html">vorige pagina</a></li>
+                <li><a href="../">inhoudsopgave</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
