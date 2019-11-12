@@ -28,3 +28,8 @@ button {
     padding: 1em;
     font-size: inherit;
 }
+
+.alt-text-img {
+    width: 50%;
+    margin-bottom: 10em;
+}
