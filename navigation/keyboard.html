@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Navigation with keyboard only</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Viga&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../stylesheet.css" type="text/css" media="all">
+
+  </head>
+
+  <body >
+      <header role="banner">
+          <h1>Navigation with keyboard only</h1>
+      </header>
+
+      <main>
+
+        <h2>The basics</h2>
+
+        <ul>
+          <li><strong>Tab:</strong> Move forward from link to link or to controls</li>
+          <li><strong>Shift + Tab:</strong> Move backward from link to link or to controls</li>
+          <li><strong>Enter:</strong> Activate links, buttons, or other interactive elements</li>
+          <li><strong>Arrow:</strong> Navigate radio buttons and select boxes and scroll up and down a page</li>
+          <li><strong>Space bar:</strong> Activate radio buttons and check boxes and buttons</li>
+        </ul>
+
+
+        <p>Note: <a href="http://www.weba11y.com/blog/2014/07/07/keyboard-navigation-in-mac-browsers/">Activate Keyboard Navigation in Mac Browsers</a></p>
+        <p>Good overview: <a href="http://webaim.org/techniques/keyboard/">Keyboard Navigation Overview on WebAIM</a></p>
+
+        <h2>Focusable elements</h2>
+        <ul>
+          <li>a</li>
+          <li>button</li>
+          <li>input</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>radio button</li>
+          <li>checkbox</li>
+        </ul>
+
+        <p>Demo: <a href="https://codepen.io/rianrietveld/full/PNXvXZ/">Codepen Navigate with keyboard</a></p>
+
+        <h2>Visible Focus</h2>
+
+        <p>Browsers add a visible focus to an element but some CSS resets add:<code>outline: 0;</code><br />This makes it very hard to navigate a site.</p>
+        <p>No visual focus: <a href="https://www.donaldjtrump.com/">Donald J. Trump</a></p>
+        <p>Add <code>:focus</code> where you add <code>:hover</code> in your CSS.</p>
+
+        <h2>Tab index</h2>
+
+        <h3>Adds focus to an element:</h3>
+
+        <ul>
+          <li><strong>tabindex: 0</strong> gives focus to items that wouldn't normally get focus and includes them into normal tab order</li>
+          <li><strong>tabindex: -1</strong> gives focus to items that wouldn't normally get focus and/or removes items from the normal tab order</li>
+          <li><strong>tabindex: any positive integer</strong> gives focus and overrules normal tab order</li>
+        </ul>
+
+        <p>Avoid hijacking the tab order with a positive tabindex: it makes it very hard for keyboard users to access for example the menu.</p>
+
+        <p>In Gravity Forms</p>
+        <ul>
+          <li><a href="https://www.gravityhelp.com/documentation/article/gform_tabindex/">disable tabindex gravity forms</a></li>
+          <li><a href="https://www.gravityhelp.com/documentation/article/gform_confirmation_anchor/">jump directly to form error or confirmation</a></li>
+        </ul>
+
+        <h2>Skip Links</h2>
+
+        <p>Special links to help keyboard users to jump quickly to content.</p>
+        <p>Demo: <a href="https://2017.us.wordcamp.org/">WordCamp US</a></p>
+        <p><a href="https://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/">Fixing "Skip to content" links</a></p>
+
+        <h2>Dropdown menu</h2>
+
+        <p>Do the sub menus show on focus?</p>
+        <ul>
+          <li>working: <a href="http://www.vanlaartrumpets.nl/en/">Van Laar Trumpets</a></li>
+          <li>Code example: <a href="https://codepen.io/rianrietveld/pen/ONreQj">Working: Codepen: Navigate a dropdown menu</a></li>
+        </ul>
+
+        <h2>Hamburger menu</h2>
+        <p>Use focusable elements to toggle</p>
+        <ul>
+          <li>not a div</li>
+          <li><a href="https://www.whitehouse.gov/">no empty elements</a></li>
+          <li>but use a &lt;button&gt;</li>
+          <li>Working: <a href="https://2017.us.wordcamp.org/">WordCamp US</a></li>
+        </ul>
+
+        <h2>Modals</h2>
+
+        <p>Close with Esc!</p>
+        <p>Demo: <a href="http://gdkraus.github.io/accessible-modal-dialog/">The Incredible Accessible Modal Window</a> by Greg Kraus (with the code also on GitHub)</p>
+        <p>Avoid a <a href="http://davidtheclark.github.io/focus-trap/demo/">keyboard trap</a></p>
+
+      </main>
+
+      <footer>
+           <nav aria-label="Pagina">
+               <h2>Menu</h2>
+               <ul>
+                   <li><a href="index.html">Back to Navigation</a></li>
+               </ul>
+           </nav>
+       </footer>
+
+  </body>
+</html>
