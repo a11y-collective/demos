@@ -6,6 +6,7 @@
     <title>Exercise: keyboard navigations</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheet.css" type="text/css" media="all">
+    <meta name="robots" content="noindex,nofollow">
 
   </head>
 
@@ -50,12 +51,11 @@
             <h2>Radio buttons</h2>
             <p>Tip: use the arrow keys</p>
             <fieldset>
-             <legend>Get a T-shirt</legend>
-              <label for="size">Size</label>
-              <input checked="checked" name="size" id="size" type="radio" value="small" />Small
-              <input name="size" type="radio" value="medium" />Medium
-              <input name="size" type="radio" value="large" />Large
-              <input name="size" type="radio" value="extra large" />Extra large
+             <legend>Select a T-shirt size</legend>
+              <input id="rb-s" checked="checked" name="size" id="size" type="radio" value="small" /><label for="rb-s">Small</label>
+              <input id="rb-m" name="size" type="radio" value="medium" /><label for="rb-m">Medium</label>
+              <input id="rb-l" name="size" type="radio" value="large" /><label for="rb-l">Large</label>
+              <input id="rb-e" name="size" type="radio" value="extra large" /><label for="rb-e">Extra large</label>
             </fieldset>
 
             <h2>Check boxes</h2>
@@ -73,11 +73,10 @@
 
           </form>
 
-
       </main>
 
       <footer>
-           <nav aria-label="Pagina">
+           <nav aria-label="Pagination">
                <h2>Menu</h2>
                <ul>
                   <li><a href="index.html">Back to Navigation</a></li>
