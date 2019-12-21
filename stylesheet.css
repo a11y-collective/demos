@@ -72,3 +72,9 @@ button {
     line-height: 1.1em;
     font-family: 'Viga', sans-serif;
 }
+
+pre {
+  font-size: 1.2em;
+  color: #4C7413;
+}
+
