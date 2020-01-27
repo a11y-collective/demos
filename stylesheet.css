@@ -1,6 +1,6 @@
 body {
     margin: 2em;
-    font-family: 'Montserrat', Verdana, sans-serif;
+    font-family: 'Inconsolata', Verdana, sans-serif;
     background-color: #efefef4d;
     color: #333;
     line-height: 1.5em;
@@ -27,7 +27,7 @@ p.right-width {
 
 h1, h2, h3 {
     line-height: 1.1em;
-    font-family: 'Viga', sans-serif;
+    font-family: 'Cousine', sans-serif;
 }
 
 h2, h3 {
