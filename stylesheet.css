@@ -1,9 +1,9 @@
 body {
     margin: 2em;
-    font-family: 'Inconsolata', Verdana, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: #efefef4d;
     color: #333;
-    line-height: 1.5em;
+	line-height: 1.5em;
 }
 
 @media screen and (min-width: 50em) {
@@ -27,7 +27,8 @@ p.right-width {
 
 h1, h2, h3 {
     line-height: 1.1em;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Arvo', serif;
+	color:
 }
 
 h2, h3 {
