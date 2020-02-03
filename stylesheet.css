@@ -1,5 +1,5 @@
 body {
-    margin: 2em;
+    margin: 2em auto;
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: #efefef4d;
     color: #333;
@@ -8,7 +8,6 @@ body {
 
 @media screen and (min-width: 50em) {
     body {
-        margin: 2em auto;
         max-width: 40em;
     }
 }
