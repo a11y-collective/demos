@@ -42,6 +42,11 @@ img.right {
     float: right
 }
 
+img.left {
+	width: 40%;
+	display: block;
+}
+
 blockquote {
     font-size: 1.2em;
     font-style: italic;
