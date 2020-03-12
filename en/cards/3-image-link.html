@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Link on an image</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<meta name="robots" content="noindex,nofollow">
+
+	</head>
+
+	<body>
+
+		<header role="banner">
+			<h1>Link on an image, examples</h1>
+		</header>
+
+		<main>
+
+			<h2>Image without link</h2>
+			<p>Image without link, with the alt text "Andree is reading while sitting relaxed on a beanbag."</p>
+
+			<p>
+				<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag.">
+			</p>
+
+			<h2>Image with link</h2>
+
+			<p>Image with a link to the BBC, with the alt text "Andree is reading while sitting relaxed on a beanbag."</p>
+			<p>
+				<a href="https://bbc.com">
+					<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag.">
+				</a>
+			</p>
+
+			<p>Image with a link to the BBC, with the alt text "BBC".</p>
+			<p>
+				<a href="https://bbc.com">
+					<img src="../../img/andree-lezen.png" alt="BBC.">
+				</a>
+			</p>
+
+			<p>Image with a link to the BBC, with the alt text "Andree is reading while sitting relaxed on a beanbag." and the aria-label="BBC" on the link.</p>
+			<p>
+				<a href="https://bbc.com" aria-label="BBC">
+					<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag.">
+				</a>
+			</p>
+
+		</main>
+
+		<footer>
+
+			<nav aria-label="Pagination">
+				<h2>Navigation</h2>
+				<ul>
+					<li><a href="index.html">Back to Cards</a></li>
+					<li><a href="keyboard.html"></a></li>
+				</ul>
+			</nav>
+
+		</footer>
+
+	</body>
+
+</html>
