@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Link on an image</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<meta name="robots" content="noindex,nofollow">
+
+	</head>
+
+	<body>
+
+		<header role="banner">
+			<h1>Link on an image, examples</h1>
+		</header>
+
+		<main>
+
+			<h2>Image without link</h2>
+			<p>Image without link, with the alt text "Andree is reading while sitting relaxed on a beanbag."</p>
+
+			<code aria-hidden="true">
+				&lt;img src="image.jpg" alt="Andree is reading while sitting relaxed on a beanbag." &gt;
+			</code>
+
+			<p>
+				<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag." class="left">
+			</p>
+
+			<h2>Image with link</h2>
+
+			<p>Image with a link to the BBC, with the alt text "Andree is reading while sitting relaxed on a beanbag."</p>
+			<code aria-hidden="true">
+				&lt;a href="https://bbc.com"&gt;<br />
+					&lt;img src="image.jpg" alt="Andree is reading while sitting relaxed on a beanbag." &gt;<br />
+				&lt;/a&gt;<br />
+			</code>
+
+			<p>
+				<a href="https://bbc.com">
+					<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag." class="left">
+				</a>
+			</p>
+
+			<p>Image with a link to the BBC, with the alt text "BBC".</p>
+
+			<code aria-hidden="true">
+				&lt;a href="https://bbc.com"&gt;<br />
+					&lt;img src="image.jpg" alt="BBC." &gt;<br />
+				&lt;/a&gt;<br />
+			</code>
+
+			<p>
+				<a href="https://bbc.com">
+					<img src="../../img/andree-lezen.png" alt="BBC." class="left">
+				</a>
+			</p>
+
+			<p>Image with a link to the BBC, with the alt text "Andree is reading while sitting relaxed on a beanbag." and the aria-label="BBC" on the link.</p>
+			<code aria-hidden="true">
+				&lt;a href="https://bbc.com" aria-label="BBC"&gt;<br />
+					&lt;img src="image.jpg" alt="Andree is reading while sitting relaxed on a beanbag." &gt;<br />
+				&lt;/a&gt;<br />
+			</code>
+
+			<p>
+				<a href="https://bbc.com" aria-label="BBC">
+					<img src="../../img/andree-lezen.png" alt="Andree is reading while sitting relaxed on a beanbag." class="left">
+				</a>
+			</p>
+
+		</main>
+
+		<footer>
+
+			<nav aria-label="Pagination">
+				<h2>Navigation</h2>
+				<ul>
+					<li><a href="index.html">Back to Cards</a></li>
+					<li><a href="4-multi-tabs.html">Multiple tabs to the same link</a></li>
+				</ul>
+			</nav>
+
+		</footer>
+
+	</body>
+
+</html>

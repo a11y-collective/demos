@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Multiple tabs to the same link</title>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	<meta name="robots" content="noindex,nofollow">
+</head>
+
+<body>
+
+<header role="banner">
+	<h1>Multiple tabs to the same link</h1>
+</header>
+
+<main>
+
+	<h2>Examples cards</h2>
+
+	<ul class="multi-tabs">
+
+		<li>
+			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
+			<h3><a href="#">Use only one link</a></h3>
+			<p>The basis: only one link, inside the heading, that is clickable. The rest is not linked and also not clickable.</p>
+		</li>
+
+
+
+		<li class="card">
+			<a href="#">
+				<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
+				<h3>Bad practice: Put an &lt;a&gt; around everything</h3>
+				<p>This will result in very long, link and heading texts and a pain to listen to if you use a screen reader.</p>
+			</a>
+		</li>
+
+
+
+		<li class="to-be-covered card">
+			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
+			<h3>
+				<a href="#">Option: use a span to cover the card.
+					<span></span>
+				</a>
+			</h3>
+			<p>Have one link inside the card to the post. Add a span inside the link so it covers the complete card. Props: Janita Top.</p>
+		</li>
+
+
+
+		<li class="to-be-covered pseudo card">
+			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
+			<h3><a href="#">Option: using pseudo-content</a></h3>
+			<p>This is the preferred method.</p>
+			<p>Give the card container element position: relative;</p>
+			<p>Give the link a ::after pseudo-content.</p>
+		</li>
+
+
+
+		<li class="to-be-covered pseudo card">
+			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
+			<h3><a href="https://w3c.org">Bad practice: using pseudo-content, plus extra link</a></h3>
+			<p><a href="https://a11y-collective.com">Extra link</a>: give it a positive z-index and position relative.</p>
+			<p>This is in fact a nested interactive control (a link within a link) even if in the HTML the links are separated.
+				This can confuse users, it's harder to understand. This is a cognitive issue.</p>
+
+		</li>
+
+
+		<li class="skip-tabs">
+			<a href="#" tabindex="-1" aria-hidden="true">
+				<img src="../../img/noah.jpg" alt="Title of the blogpost">
+			</a>
+			<h3><a href="#">Hide links</a></h3>
+			<p>Use multiple links, but hide them for keyboard and screen reader users.</p>
+			<p>Use tabindex="-1" aria-hidden="true" <strong>together</strong> on a link to hide it.</p>
+		</li>
+	</ul>
+
+</main>
+
+<footer>
+
+	<nav aria-label="Pagination">
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="index.html">Back to Cards</a></li>
+			<li><a href="3-image-link.html">Link on an image</a></li>
+		</ul>
+	</nav>
+
+</footer>
+
+</body>
+
+</html>
