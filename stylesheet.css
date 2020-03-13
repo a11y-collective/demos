@@ -82,3 +82,78 @@ pre {
   color: #4C7413;
 }
 
+/*
+	Multi tabs
+*/
+
+.multi-tabs li {
+	list-style: none;
+	width: 20em;
+	border: green 2px solid;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.multi-tabs a:hover,
+.multi-tabs a:focus {
+	text-decoration: none;
+	outline: green 2px solid;
+}
+
+.multi-tabs li.card a {
+	text-decoration: none;
+}
+
+.multi-tabs li.card a:hover,
+.multi-tabs li.card a:focus {
+	text-decoration: underline;
+}
+
+.multi-tabs img {
+	width: 20em;
+}
+
+
+.multi-tabs .to-be-covered {
+	position: relative;
+}
+
+.multi-tabs .to-be-covered:focus-within,
+.multi-tabs .to-be-covered:hover,
+.multi-tabs li.card:focus-within,
+.multi-tabs li.card:hover {
+	outline: thick double green;
+}
+
+.multi-tabs li.skip-tab a:hover img {
+	outline: thick double green;
+}
+
+.multi-tabs .to-be-covered a span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.multi-tabs .pseudo a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* extra link */
+.multi-tabs p a {
+	text-decoration: underline;
+	position: relative;
+	z-index: 1;
+}
+
+.multi-tabs p a:hover,
+.multi-tabs p a:focus {
+	text-decoration: none;
+}
