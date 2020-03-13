@@ -100,6 +100,7 @@ pre {
 	outline: green 2px solid;
 }
 
+
 .multi-tabs li.card a {
 	text-decoration: none;
 }
@@ -107,6 +108,15 @@ pre {
 .multi-tabs li.card a:hover,
 .multi-tabs li.card a:focus {
 	text-decoration: underline;
+}
+
+.multi-tabs li.card p a {
+	text-decoration: underline;
+}
+
+.multi-tabs li.card p a:hover,
+.multi-tabs li.card p a:focus {
+	text-decoration: none;
 }
 
 .multi-tabs img {

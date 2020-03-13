@@ -27,7 +27,14 @@
 			<p>The basis: only one link, inside the heading, that is clickable. The rest is not linked and also not clickable.</p>
 		</li>
 
-
+		<li class="skip-tabs">
+			<a href="#" tabindex="-1" aria-hidden="true">
+				<img src="../../img/noah.jpg" alt="Title of the blogpost">
+			</a>
+			<h3><a href="#">Hide links</a></h3>
+			<p>Use multiple links, but hide them for keyboard and screen reader users.</p>
+			<p>Use tabindex="-1" aria-hidden="true" <strong>together</strong> on a link to hide it.</p>
+		</li>
 
 		<li class="card">
 			<a href="#">
@@ -36,8 +43,6 @@
 				<p>This will result in very long, link and heading texts and a pain to listen to if you use a screen reader.</p>
 			</a>
 		</li>
-
-
 
 		<li class="to-be-covered card">
 			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
@@ -49,8 +54,6 @@
 			<p>Have one link inside the card to the post. Add a span inside the link so it covers the complete card. Props: Janita Top.</p>
 		</li>
 
-
-
 		<li class="to-be-covered pseudo card">
 			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
 			<h3><a href="#">Option: using pseudo-content</a></h3>
@@ -58,8 +61,6 @@
 			<p>Give the card container element position: relative;</p>
 			<p>Give the link a ::after pseudo-content.</p>
 		</li>
-
-
 
 		<li class="to-be-covered pseudo card">
 			<img src="../../img/noah.jpg" alt="Noah, sitting behind his laptop, smiling at the camera">
@@ -70,15 +71,6 @@
 
 		</li>
 
-
-		<li class="skip-tabs">
-			<a href="#" tabindex="-1" aria-hidden="true">
-				<img src="../../img/noah.jpg" alt="Title of the blogpost">
-			</a>
-			<h3><a href="#">Hide links</a></h3>
-			<p>Use multiple links, but hide them for keyboard and screen reader users.</p>
-			<p>Use tabindex="-1" aria-hidden="true" <strong>together</strong> on a link to hide it.</p>
-		</li>
 	</ul>
 
 </main>
