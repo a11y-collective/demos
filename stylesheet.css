@@ -85,7 +85,13 @@ pre {
 /*
 	Multi tabs
 */
-
+.images li {
+	list-style: none;
+	width: 30em;
+	border: green 2px solid;
+	padding: 1em;
+	margin-bottom: 1em;
+}
 .multi-tabs li {
 	list-style: none;
 	width: 20em;
@@ -94,10 +100,12 @@ pre {
 	margin-bottom: 1em;
 }
 
+.images a:hover,
+.images a:focus,
 .multi-tabs a:hover,
 .multi-tabs a:focus {
 	text-decoration: none;
-	outline: green 2px solid;
+	outline: green 1px solid;
 }
 
 
