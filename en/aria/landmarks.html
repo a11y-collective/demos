@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Landmarks</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header role="banner">
+			<h1>Landmarks</h1>
+		</header>
+
+		<main>
+
+		<p>Landmarks give semantic structure to a web page. Bonus: Screen readers can navigate on it.</p>
+
+        	<h2>Examples landmarks</h2>
+        	<p><strong>Important</strong>: Only one <code>&lt;main&gt;</code> per page, preferable containing the main content.</p>
+
+        	<div class="demo-link">
+        		<ul>
+        			<li>&lt;header&gt;</li>
+        			<li>&lt;nav&gt;</li>
+        			<li>&lt;main&gt;</li>
+        			<li>&lt;section&gt;</li>
+        			<li>&lt;aside&gt;</li>
+        			<li>&lt;footer&gt;</li>
+        		</ul>
+        	</div>
+
+        	<h3>Additional roles for landmarks</h3>
+        	<div class="demo-link">
+        		<ul>
+        			<li>&lt;header&gt;</li>
+        			<li>&lt;header role="banner"></li>
+        		</ul>
+
+        		<ul>
+        			<li>&lt;form&gt;</li>
+        			<li>&lt;form role="search"&gt;</li>
+        		</ul>
+        	</div>
+
+        	<h3>Label landmarks that aren't unique on a page</h3>
+
+        	<p>Give them an aria-label.</p>
+        	<div class="demo-link">
+        		<ul>
+        			<li>&lt;nav aria-label="Main"&gt;</li>
+        			<li>&lt;nav aria-label="Social media"&gt;</li>
+        		</ul>
+
+        		<ul>
+        			<li>&lt;aside aria-label="Contact information"&gt;</li>
+        			<li>&lt;aside aria-label="Related articles"&gt;</li>
+        		</ul>
+        	</div>
+
+        	<h3>Older browsers</h3>
+        	<p>For Internet Explorer 10 and older:</p>
+        	<div class="demo-link">
+        		<ul>
+        			<li>&lt;nav role="navigation"&gt;</li>
+        			<li>&lt;main role="main"&gt;</li>
+        			<li>&lt;aside role="complementary"&gt;</li>
+        		</ul>
+        	</div>
+
+
+        	<h2>DIY</h2>
+        	<ul>
+        		<li><a href="https://www.gov.uk">GOV.UK</a></li>
+        		<li><a href="https://central.wordcamp.org">WordCamp Central</a></li>
+        		<li><a href="https://www.bbc.com/news">BBC</a></li>
+        		<li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+        	</ul>
+
+		</main>
+
+		<footer>
+			<p><a href="index.html">Index</a></p>
+		</footer>
+
+	</body>
+
+</html>
