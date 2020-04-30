@@ -7,15 +7,52 @@
 		<meta name="robots" content="noindex, nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<script src="../js/alert.js"></script>
 	</head>
 
 	<body>
 
-		<header role="banner">
+		<header>
 			<h1>First rule of ARIA</h1>
 		</header>
 
 		<main>
+
+
+			<div class="block">
+				<p>Div with onclick:</p>
+				<pre>div onclick="showAlert()"</pre>
+				<div onclick="showAlert()">Show alert</div>
+			</div>
+
+			<div class="block">
+				<p>Add CSS:</p>
+				<pre>div onclick="showAlert()" <br />class="button"</pre>
+				<div class="button" class="button" onclick="showAlert()">Show alert</div>
+			</div>
+
+			<div class="block">
+				<p>Add role="button":</p>
+				<pre>div onclick="showAlert()" <br />class="button"<br />role="button"</pre>
+				<div class="button" role="button" onclick="showAlert()">Show alert</div>
+			</div>
+
+
+			<div class="block">
+				<p>Add tabindex=0:</p>
+				<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"</pre>
+				<div class="button" role="button" tabindex="0" onclick="showAlert()">Show alert</div>
+			</div>
+			<div class="block">
+				<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"<br />onkeypress="showAlert()</pre>
+				<div class="button" role="button" tabindex="0" onclick="showAlert()" onkeypress="showAlert()">Show alert</div>
+			</div>
+
+			<div class="block">
+				<p>Native HTML button and onclick:</p>
+				<pre>button onclick="showAlert()"</pre>
+				<button onclick="showAlert()">Show alert</button>
+			</div>
 
 		</main>
 
