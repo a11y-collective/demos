@@ -197,6 +197,68 @@ pre {
 	text-decoration: none;
 }
 
+/* Tooltips. */
+.tooltip {
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	background: transparent;
+}
+
+.tooltip:hover,
+.tooltip:focus {
+	border: 1px solid #333;
+}
+.heart {
+	width: 2em;
+	height: 2em;
+	fill: #c00;
+}
+
+.with-short-tooltip[aria-label] {
+	position:relative
+}
+
+.with-short-tooltip[aria-label]::after {
+	content:attr(aria-label);
+	display:none;
+	position:absolute;
+	top:70%;
+	left:10px;
+	padding:0.5em;
+	white-space:nowrap;
+	overflow:visible;
+	color:#fff;
+	background-color: #1e97bc;
+}
+.with-short-tooltip[aria-label]:hover::after,
+.with-short-tooltip[aria-label]:focus::after {
+	display:block
+}
+
+.long-tooltip {
+	display: inline-block;
+}
+.question-mark {
+	width: 2em;
+	height: 2em;
+}
+
+.long-tooltip {
+	position:relative
+}
+
+.long-tooltip .tooltip-descr {
+	position:absolute;
+	top:0;
+	left:2em;
+	min-width: 30em;
+	padding:0.5em;
+	overflow:visible;
+	border: solid 1px #333;
+	background-color: #fff;
+}
+
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
