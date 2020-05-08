@@ -16,9 +16,9 @@
 		<header>
 			<h1>Role, name and value</h1>
 
-			<form role="search">
+			<form role="search" class="block">
 				<label for="s">Search</label>
-				<input id="s" name="search" autocomplete="off">
+				<input id="s" name="search" autocomplete="off"><br />
 				<button>Search</button>
 			</form>
 
@@ -52,7 +52,7 @@
 
 			<h2>Form controls</h2>
 
-            <form>
+            <form class="block">
 
 				<div class="form-block">
 	              <label for="name">Your name</label><br />
@@ -88,6 +88,54 @@
                 <button>Send!</button>
 
             </form>
+
+            <h2>Role presentation </h2>
+
+            <h3>On an image</h3>
+
+            <div class="block">
+				<p>No alt attribute</p>
+				<img src="../../img/IMG_0123.jpg" class="left">
+
+				<p>Alt attribute with a value</p>
+				<img src="../../img/IMG_0123.jpg" alt="A cat sleeping." class="left">
+
+				<p>Alt attribute with an empty value</p>
+				<img src="../../img/IMG_0123.jpg" alt="" class="left">
+
+				<p>No alt attribute, with role=presentation</p>
+				<img src="../../img/IMG_0123.jpg" role="presentation" class="left">
+			</div>
+
+			<h3>On a table</h3>
+
+            <div class="block">
+
+                <table>
+                    <caption>Basic HTML table</caption>
+                    <tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
+                    <tr><td>Dog</td><td>4</td></tr>
+                    <tr><td>Cat</td><td>4</td></tr>
+                    <tr><td>Chicken</td><td>2</td></tr>
+                 </table>
+
+                <table role="presentation">
+                    <caption>Same HTML table with role=presentation</caption>
+                    <tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
+                    <tr><td>Dog</td><td>4</td></tr>
+                    <tr><td>Cat</td><td>4</td></tr>
+                    <tr><td>Chicken</td><td>2</td></tr>
+                 </table>
+            </div>
+
+			<h2>Announce an emoij</h2>
+			 <div class="block">
+
+			    Tulip <pre>&amp;#127799;</pre>
+
+				<p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
+				<p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
+			 </div>
 
 		</main>
 
