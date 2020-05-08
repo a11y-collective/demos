@@ -62,11 +62,29 @@ img.left {
 	display: block;
 }
 
+table {
+	border-collapse: collapse;
+	margin-bottom: 4em;
+}
+td, th{
+	padding: 0.5rem;
+	border: 1px solid #333;
+}
+
+table caption, th {
+	text-align: left;
+	font-weight: bold;
+}
+
 blockquote {
     font-size: 1.2em;
     font-style: italic;
     border-left: 0.2em solid #ccc;
     padding: 1em;
+}
+
+::placeholder {
+	opacity: 1;
 }
 
 footer nav {
@@ -198,15 +216,17 @@ pre {
 }
 
 /* Tooltips. */
-.tooltip {
+
+/* Tooltip on aria-label. */
+.has-tooltip {
 	margin: 0;
 	padding: 0;
 	border: 1px solid transparent;
 	background: transparent;
 }
 
-.tooltip:hover,
-.tooltip:focus {
+.has-tooltip:hover,
+.has-tooltip:focus {
 	border: 1px solid #333;
 }
 .heart {
@@ -215,11 +235,11 @@ pre {
 	fill: #c00;
 }
 
-.with-short-tooltip[aria-label] {
+button[aria-label] {
 	position:relative
 }
 
-.with-short-tooltip[aria-label]::after {
+button[aria-label]::after {
 	content:attr(aria-label);
 	display:none;
 	position:absolute;
@@ -231,33 +251,72 @@ pre {
 	color:#fff;
 	background-color: #1e97bc;
 }
-.with-short-tooltip[aria-label]:hover::after,
-.with-short-tooltip[aria-label]:focus::after {
+
+button[aria-label]:hover::after,
+button[aria-label]:focus::after {
 	display:block
 }
 
-.long-tooltip {
-	display: inline-block;
-}
+/* Tooltip on aria-describedby. */
 .question-mark {
 	width: 2em;
 	height: 2em;
 }
+[role="tooltip"] {
+	display: none;
+}
 
-.long-tooltip {
+button:hover + [role="tooltip"],
+button:focus + [role="tooltip"] {
+	display: block;
+}
+
+.long-tooltip-container {
 	position:relative
 }
 
-.long-tooltip .tooltip-descr {
+[role="tooltip"] {
 	position:absolute;
 	top:0;
 	left:2em;
-	min-width: 30em;
-	padding:0.5em;
+	min-width: 20em;
+	max-width: 30em;
+	padding: 1em;
 	overflow:visible;
 	border: solid 1px #333;
-	background-color: #fff;
+	background-color: #fefefe;
 }
+
+[role="tooltip"] img {
+	margin: 1em 0;
+}
+
+/* Tooltip on emoij. */
+
+span.tooltip {
+	position: relative;
+}
+
+
+span.tooltip:hover::after,
+span.tooltip:focus::after{
+	content:attr(aria-label);
+	display:none;
+	position:absolute;
+	top:70%;
+	left:10px;
+	padding:0.5em;
+	white-space:nowrap;
+	overflow:visible;
+	color:#fff;
+	background-color: #1e97bc;
+}
+
+span.tooltip:hover::after,
+span.tooltip:focus::after {
+	display:block
+}
+
 
 
 /* Text meant only for screen readers. */
@@ -280,8 +339,10 @@ pre {
 .link-image:hover {
 	text-decoration: underline;
 }
-.link-image svg {
+.link-image svg,
+.link-image img{
 	vertical-align: middle;
 	width: 4em;
 	height: 4em;
+	padding-right: 0.3em;
 }
