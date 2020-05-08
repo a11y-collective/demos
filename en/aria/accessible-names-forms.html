@@ -18,7 +18,51 @@
 		</header>
 
 		<main>
-4 dingen
+
+			<h2>Naming a form control</h2>
+
+			<p><strong>First of all</strong>: use a visible label.</p>
+
+			<p>Order of retrieving the accessible name</p>
+			<ul>
+				<li>label</li>
+				<li>aria-label</li>
+				<li>aria-labelledby</li>
+				<li>aria-describedby</li>
+			</ul>
+
+			<h3>The HTML5 way</h3>
+			<form class="block">
+				<label for="id-textarea">Your question</label><br />
+				<textarea id="id-textarea"></textarea>
+			</form>
+
+			<h3>Aria label</h3>
+			<p>Disadvantage: you don't have a visible label. It doesn't give the form control an accessible name.</p>
+			<form class="block">
+	            <textarea aria-label="Your question"></textarea>
+	        </form>
+
+	        <h3>A placeholder is not a label</h3>
+	        <form class="block">
+	            <textarea placeholder="Your question"></textarea>
+	        </form>
+
+	        <h3>Aria-labelledby</h3>
+	        <p>This could better be done in HTML5.</p>
+	        <form class="block">
+	            <div id="id-aria-labelledby">Your question</div>
+	            <textarea aria-labelledby="id-aria-labelledby"></textarea>
+	        </form>
+
+	        <h3>Aria-describedby</h3>
+	        <p>Is additional to the label text, and is useful to add extra information.</p>
+	        <form class="block">
+	            <label for="id-password">Your password</label>
+	            <input type="password" id="id-password" aria-describedby="id-aria-describedby">
+	            <p id="id-aria-describedby">Please use a password of minimal 8 characters.</p>
+	        </form>
+
 		</main>
 
 		<footer>
