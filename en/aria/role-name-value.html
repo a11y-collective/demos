@@ -89,7 +89,7 @@
 
             </form>
 
-            <h2>Role presentation </h2>
+            <h2>Naming an image</h2>
 
             <h3>On an image</h3>
 
@@ -104,10 +104,18 @@
 				<img src="../../img/IMG_0123.jpg" alt="" class="left">
 			</div>
 
-			<h3>On a table</h3>
+			<h2>Naming an emoij</h2>
+             <div class="block">
+
+                Tulip <pre>&amp;#127799;</pre>
+
+                <p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
+                <p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
+             </div>
+
+			<h3>Role=presentation on a table</h3>
 
             <div class="block">
-
                 <table>
                     <caption>Basic HTML table</caption>
                     <tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
@@ -125,15 +133,24 @@
                  </table>
             </div>
 
-			<h2>Announce an emoij</h2>
-			 <div class="block">
+            <h2>aria-required="true", required and novalidate</h2>
+            <div class="block">
+	            <form class="block">
 
-			    Tulip <pre>&amp;#127799;</pre>
+	                <div class="form-block">
+	                  <label for="name">Your name (required)</label><br />
+	                  <input id="name" type="text" autocomplete="name" required>
+	                </div>
 
-				<p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
-				<p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
-			 </div>
+	                <div class="form-block">
+	                  <label for="email">Your email (required)</label><br />
+	                  <input id="email" type="text" autocomplete="email" required>
+	                </div>
 
+	                <button>Send!</button>
+
+	            </form>
+			</div>
 		</main>
 
 		<aside class="block">This is an aside</aside>
