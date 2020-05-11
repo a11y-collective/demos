@@ -6,7 +6,8 @@
 		<title>Dynamic changes</title>
 		<meta name="robots" content="noindex, nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
-
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="../js/dynamic.js"></script>
 
 		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
 	</head>
@@ -18,6 +19,22 @@
 		</header>
 
 		<main>
+
+			<h2>aria-live</h2>
+
+	        <form class="form-chars-remaining">
+
+	            <label for="message">Your Message:</label><br />
+	            <textarea id="message"  aria-describedby="chars-remaining"></textarea>
+
+	            <p id="chars-remaining">
+	                <span id="live-region-text">
+	                    <span class="count">150</span> characters remaining
+	                </span>
+	                of 150 characters
+	            </p>
+	        </form>
+
 
 		</main>
 
