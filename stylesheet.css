@@ -97,10 +97,9 @@ button, .button {
     padding: 1em;
     font-size: inherit;
 	cursor: pointer;
-}
-
-.button {
-	-webkit-appearance: button;
+	background-color: #eee;
+	border: solid 1px #333;
+	text-align: center;
 	display: inline-block;
 }
 
@@ -345,4 +344,36 @@ span.tooltip:focus::after {
 	width: 4em;
 	height: 4em;
 	padding-right: 0.3em;
+}
+
+/* Tab interface */
+
+[role="tablist"] {
+	padding: 0;
+}
+
+[role="tablist"] li, [role="tablist"] a {
+	display: inline-block;
+}
+
+[role="tablist"] a {
+	text-decoration: none;
+	padding: 0.5rem 1em;
+}
+
+[role="tablist"] [aria-selected] {
+	border: 2px solid;
+	background: #fff;
+	border-bottom: 0;
+	position: relative;
+	top: 2px;
+}
+
+[role="tabpanel"] {
+	border: 2px solid;
+	padding: 1.5rem;
+}
+
+[role="tabpanel"] * + * {
+	margin-top: 0.75rem;
 }
