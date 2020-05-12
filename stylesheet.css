@@ -377,3 +377,11 @@ span.tooltip:focus::after {
 [role="tabpanel"] * + * {
 	margin-top: 0.75rem;
 }
+
+button.expandable + [aria-hidden] {
+	display: none;
+}
+
+button.expandable + [aria-hidden="false"] {
+	display: block;
+}

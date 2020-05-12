@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Hidde content</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Hide content</h1>
+		</header>
+
+		<main>
+
+		<div class="block">
+			<p>aria-hidden:</p>
+			<pn aria-hidden="true">
+				Can you hear me?
+			</p>
+		</div>
+
+		<div class="block">
+			<p>hidden:</p>
+            <p hidden class="block">
+                Can you hear me?
+            </p>
+		</div>
+
+		<div class="block">
+            <p>CSS display: none;</p>
+            <p style="display: none">Can you hear me?</p>
+		</div>
+
+			<div class="block">
+                <p>CSS .screen-reader-text</p>
+                <p class="screen-reader-text">Can you hear me?</p>
+            </div>
+
+
+		</main>
+
+
+		<footer>
+			<p><a href="index.html">Back to index</a></p>
+		</footer>
+
+	</body>
+
+</html>
