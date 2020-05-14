@@ -39,17 +39,17 @@
 
 			<div class="block">
 				<p>The alt text will become the link text.</p>
-				<p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.svg" alt="Wikipedia"></a></p>
+				<p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.jpg" alt="Wikipedia"></a></p>
 			</div>
 
 			<div class="block">
 				<p>Preferred solution: add text to the icon. The alt text of the image can stay empty: alt="".</p>
-                <p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.svg" alt="">Wikipedia</a></p>
+                <p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.jpg" alt="">Wikipedia</a></p>
             </div>
 
             <div class="block">
                 <p>Or you can use alt text of the image to describe the image.</p>
-                <p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.svg" alt="Logo Wikipedia">Wikipedi</a></p>
+                <p><a href="https://wikipedia.org" class="link-image"> <img src="../../img/wikipedia-logo.jpg" alt="Logo Wikipedia">Wikipedia</a></p>
             </div>
 
 			<h2>Link an SVG</h2>
@@ -58,6 +58,7 @@
 			<div class="block">
 				<a href="https://twitter.com/A11Ycollective" class="link-image">
 					<svg
+						focusable="false"
 	                    viewBox="0 0 400 400"
 	                    xmlns="http://www.w3.org/2000/svg">
 	                    <defs>
@@ -144,7 +145,7 @@
 			<h3>Fourth option: add the accessible name to the SVG</h3>
             <div class="block">
                 <p>Give the SVG a title, an aria-labelledby and a role="img"</p>
-                <p><strong>Step 1</strong>: give the SVG a role="img"</p>
+                <p><strong>Step 1</strong>: give the SVG a role="img".</p>
                 <a href="https://twitter.com/A11Ycollective" class="link-image">
                     <svg
                         role="img"
@@ -159,7 +160,7 @@
                     </svg>
                 </a>
 
-                <p><strong>Step 2</strong>: give a title, with an id</p>
+                <p><strong>Step 2</strong>: give a title, with an ID.</p>
                 <a href="https://twitter.com/A11Ycollective" class="link-image">
                     <svg
                         role="img"

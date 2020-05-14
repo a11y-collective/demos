@@ -31,23 +31,29 @@
 				<li>aria-describedby</li>
 			</ul>
 
-			<h3>The HTML5 way</h3>
+			<h3>The HTML way</h3>
 			<form class="block">
 				<label for="id-textarea">Your question</label><br />
 				<textarea id="id-textarea"></textarea>
 			</form>
 
-			<h3>Aria label</h3>
-			<p>Disadvantage: you don't have a visible label. It doesn't give the form control an accessible name.</p>
+	        <h3>A placeholder is not a label</h3>
+            <form class="block">
+                <textarea placeholder="Your question"></textarea>
+            </form>
+
+			<h3>aria-label</h3>
+			<p>Disadvantage: you don't have a visible label. But id does give the form control an accessible name.</p>
 			<form class="block">
 	            <textarea aria-label="Your question"></textarea>
 	        </form>
 
-	        <h3>A placeholder is not a label</h3>
-	        <form class="block">
-	            <textarea placeholder="Your question"></textarea>
-	        </form>
-ß
+            <h3>A placeholder and aria-label</h3>
+
+            <form class="block">
+                <textarea aria-label="Your question" placeholder="Describe your question."></textarea>
+            </form>
+
 	        <h3>Aria-labelledby</h3>
 	        <form class="block">
 	            <div id="id-aria-labelledby">Your question</div>
@@ -58,7 +64,7 @@
 	        <p>Is additional to the label text, and is useful to add extra information.</p>
 	        <form class="block">
 	            <label for="id-password">Your password</label>
-	            <input type="password" id="id-password" aria-describedby="id-aria-describedby">
+	            <input type="password" id="id-password" aria-describedby="id-aria-describedby" autocomplete="off">
 	            <p id="id-aria-describedby">Please use a password of minimal 8 characters.</p>
 	        </form>
 
