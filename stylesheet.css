@@ -385,3 +385,25 @@ button.expandable + [aria-hidden] {
 button.expandable + [aria-hidden="false"] {
 	display: block;
 }
+
+.form-errors input {
+	margin-top: 2em;
+}
+
+.description {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.errors li {
+	margin: 0 2em;
+}
+.errors h3 {
+	margin: 0;
+}
+
+.error-message,
+.errors h3 {
+	color: #b00;
+	font-weight: bold;
+}

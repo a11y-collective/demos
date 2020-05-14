@@ -16,12 +16,6 @@
 		<header>
 			<h1>Role, name and value</h1>
 
-			<form role="search" class="block">
-				<label for="s">Search</label>
-				<input id="s" name="search" autocomplete="off"><br />
-				<button>Search</button>
-			</form>
-
 		</header>
 
 		<main>
@@ -133,7 +127,14 @@
                  </table>
             </div>
 
-            <h2>aria-required="true", required and novalidate</h2>
+            <form role="search" class="block">
+                <label for="s">Search</label>
+                <input id="s" name="search" autocomplete="off"><br />
+                <button>Search</button>
+            </form>
+
+
+            <h2>aria-required="true" vs required</h2>
             <div class="block">
 	            <form class="block">
 
