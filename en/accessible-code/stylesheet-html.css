@@ -1,0 +1,55 @@
+
+.h1, h2 {
+    line-height: 1.1em;
+    font-family: 'Arvo', serif;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 2em 0 0.5em 0;
+}
+
+.dot {
+    padding-right: 0.3em;
+    font-size: 1.5em;
+}
+.dot::after {
+    content: "\2022";
+}
+
+.dot,
+.number {
+    padding-right: 0.3em;
+    font-size: 1em;
+}
+
+button,
+.button {
+    display: inline-block;
+    margin: 1em 0 0.5em 0;
+    padding: 1em;
+    border: solid 1px #ccc;
+}
+
+.button:hover,
+.button:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
