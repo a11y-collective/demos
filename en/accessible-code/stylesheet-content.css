@@ -1,0 +1,13 @@
+.nursery::before {
+    content: 'Nursery Rhyme: ';
+    color: #00a699;
+}
+
+.song::before {
+    content: 'Song: ';
+    color: #9b51e0;
+}
+
+blockquote::before {
+    content: 'Quote';
+}
