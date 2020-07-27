@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Skip link</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<script src="skip-link.js"></script>
+
+	</head>
+
+	<body>
+
+		<a href="#main" class="screen-reader-text skip-link">Jump directly to the content</a>
+
+		<header>
+
+			<nav>
+                <ul><li><a href="#">home</a></li><li><a href="#">about</a></li><li><a href="#">contact</a></li></ul>
+            </nav>
+		</header>
+
+		<main id="main">
+			<h1>Skip link</h1>
+
+			<p><a href="#">first link in the main section.</a><p></p>
+
+			<h2>HTML</h2>
+			<pre>&lt;a href="#main" class="skip-link screen-reader-text">Jump directly to the content&lt;/a></pre>
+
+			<h2>CSS</h2>
+<pre>
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.skip-link {
+	background-color: #eee;
+	color: #333;
+	display: block;
+	padding: 1em;
+}
+
+.skip-link:focus {
+	clip: auto;
+	clip-path:none;
+	height: auto;
+	left: 1em;
+	top: 1em;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#main[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+</pre>
+
+			<h2>JavaScript (optional, for older browser support)</h2>
+<pre>
+( function() {
+
+    if ( document.getElementById && window.addEventListener ) {
+
+        window.addEventListener( 'hashchange', function() {
+            var element = document.getElementById( location.hash.substring( 1 ) );
+
+            if ( element ) {
+                if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.nodeName ) ) {
+                    element.tabIndex = -1;
+                }
+
+                element.focus();
+            }
+        }, false );
+    }
+} )();
+</pre>
+
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>

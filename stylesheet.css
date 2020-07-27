@@ -66,9 +66,13 @@ table {
 	border-collapse: collapse;
 	margin-bottom: 4em;
 }
-td, th{
+td, th {
 	padding: 0.5rem;
 	border: 1px solid #333;
+}
+
+th {
+	background-color: #ddd;
 }
 
 table caption, th {
@@ -330,6 +334,27 @@ span.tooltip:focus::after {
 	position: absolute;
 	width: 1px;
 	word-wrap: normal;
+}
+/* Skip links (works together with .screen-reader-text). */
+.skip-link {
+	background-color: #eee;
+	color: #333;
+	display: block;
+	padding: 1em;
+}
+
+.skip-link:focus {
+	clip: auto;
+	clip-path: none;
+	height: auto;
+	left: 1em;
+	top: 1em;
+	width: auto;
+	z-index: 100000;
+}
+/* Do not show the outline on the skip link target. */
+#main[tabindex="-1"]:focus {
+	outline: 0;
 }
 
 .link-image {

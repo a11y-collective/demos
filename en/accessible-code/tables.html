@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Data tables</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Data tables</h1>
+		</header>
+
+		<main>
+
+			<h2>Table with one header in the first row</h2>
+
+			<table>
+				<caption>Events</caption>
+            	<tr>
+            		<th>Date</th>
+            		<th>Event</th>
+            		<th>Venue</th>
+            	</tr>
+            	<tr>
+            		<td>12 February</td>
+            		<td>Waltz with Strauss</td>
+            		<td>Main Hall</td>
+            	</tr>
+            	<tr>
+            		<td>24 March</td>
+            		<td>The Obelisks</td>
+            		<td>West Wing</td>
+            	</tr>
+            	<tr>
+            		<td>14 April</td>
+            		<td>The What</td>
+            		<td>Main Hall</td>
+            	</tr>
+            </table>
+
+            <h2>Table with one header in the first column</h2>
+
+            <table>
+                <caption>Concerts</caption>
+            	<tr>
+            		<th>Date</th>
+            		<td>12 February</td>
+            		<td>24 March</td>
+            		<td>14 April</td>
+            	</tr>
+            	<tr>
+            		<th>Event</th>
+            		<td>Waltz with Strauss</td>
+            		<td>The Obelisks</td>
+            		<td>The What</td>
+            	</tr>
+            	<tr>
+            		<th>Venue</th>
+            		<td>Main Hall</td>
+            		<td>West Wing</td>
+            		<td>Main Hall</td>
+            	</tr>
+            </table>
+
+            <h2>Using scope</h2>
+
+            <table>
+              <caption>Teddy bear collectors</caption>
+              <tr>
+                <th scope="col">Last Name</th>
+                <th scope="col">First Name</th>
+                <th scope="col">City</th>
+              </tr>
+              <tr>
+                <td>Phoenix</td>
+                <td>Imari</td>
+                <td>Henry</td>
+              </tr>
+              <tr>
+                <td>Zeki</td>
+                <td>Rome</td>
+                <td>Min</td>
+              </tr>
+              <tr>
+                <td>Apirka</td>
+                <td>Kelly</td>
+                <td>Brynn</td>
+              </tr>
+            </table>
+
+            <h2>Two headers, using scope</h2>
+
+            <table>
+              <caption>Delivery slots</caption>
+              <tr>
+                <td></td>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+              </tr>
+              <tr>
+                <th scope="row">09:00 - 11:00</th>
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00 - 13:00</th>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">13:00 - 15:00</th>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">15:00 - 17:00</th>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+              </tr>
+            </table>
+
+
+			<p>More examples on: <a href="https://www.w3.org/WAI/tutorials/tables/">W3C tutorial about table concepts</a></p>
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>
