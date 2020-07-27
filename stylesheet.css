@@ -71,6 +71,10 @@ td, th {
 	border: 1px solid #333;
 }
 
+th {
+	background-color: #ddd;
+}
+
 table caption, th {
 	text-align: left;
 	font-weight: bold;
