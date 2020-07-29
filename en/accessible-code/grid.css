@@ -1,0 +1,48 @@
+header {
+    grid-area: header;
+}
+
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    margin: 2em;
+    grid-template-areas:
+            "header"
+            "aside"
+            "content"
+            "footer"
+}
+
+@media only screen and (min-width: 50em)  {
+    .wrapper {
+        grid-template-columns: 20% auto;
+        margin: 2em auto;
+        grid-template-areas:
+                "header   header"
+                "aside    content"
+                "footer   footer";
+    }
+}
+
+.box {
+    border: #444 solid 2px;
+    border-radius: 0.4em;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
