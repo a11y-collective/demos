@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Form labels</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Form labels</h1>
+
+	</header>
+
+	<main>
+
+		<h2>Labelling</h2>
+
+		<form>
+
+			<div class="block">
+				<p>No label:</p>
+				<input type="text" name="colour">
+			</div>
+
+			<div class="block">
+				<p>Only a placeholder:</p>
+				<input type="text" name="colour" placeholder="What's your favourite colour?">
+			</div>
+
+			<div class="block">
+				<p>Not really a label, just text in a span next to the text:</p>
+				<span>What's your favourite colour?</span>
+				<input type="text" name="colour">
+			</div>
+
+			<div class="block">
+				<p>A label, but not attached to the input</p>
+                <label>What's your favourite colour?</label>
+                <input type="text" name="colour">
+            </div>
+
+            <div class="block">
+                <p>Proper label/input relation:</p>
+                <label for="colour1">What's your favourite colour?</label>
+                <input type="text" id="colour1" name="colour">
+
+                <label for="unique-id">Amount</label>
+                <select name="amount" id="unique-id">
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                </select>
+
+
+            </div>
+
+            <div class="block">
+                <p>Proper label/input relation plus a placeholder:</p>
+                <label for="colour2">What's your favourite colour?</label>
+                <input type="text" id="colour2" name="colour" placeholder="Type a colour">
+            </div>
+
+            <div class="block">
+                <p>Different accessible name than visible:</p>
+                <label for="colour3" class="screen-reader-text">Favourite colour</label>
+                <input type="text" id="colour3" name="colour" placeholder="What's your favourite colour?">
+            </div>
+
+            <div class="block">
+                <p>Don't make me guess:</p>
+                <label for="colour4" class="screen-reader-text">Start a search</label>
+                <input type="text" id="colour4" name="colour" placeholder="Search">
+            </div>
+
+            <h2>Alternatives</h2>
+            <div class="block">
+                <p>Implicit label:</p>
+                <label for="colour5">What's your favourite colour?
+                    <input type="text" id="colour5" name="colour">
+                </label>
+            </div>
+
+            <div class="block">
+                <p>Use an aria-label (not preferred)</p>
+                <input type="text" id="size" name="size" aria-label="Size" placeholder="Size">
+            </div>
+
+
+			<h2>Keep the label clean and to the point.</h2>
+            <div class="block">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Please subscribe to <a href="#">our terms</a>.</label>
+            </div>
+
+
+		</form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>

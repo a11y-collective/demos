@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Form fieldsets</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Form fieldsets</h1>
+
+	</header>
+
+	<main>
+
+
+		<form>
+
+
+		<fieldset>
+		    <legend>How many cookies?</legend>
+		    <label for="unique-id-for-amount">Amount</label>
+		    <select name="amount" id="unique-id-for-amount">
+		        <option value="one">One</option>
+		        <option value="two">Two</option>
+		        <option value="three">Three</option>
+		    </select>
+		</fieldset>
+
+		<fieldset>
+		    <legend>Select a T-shirt size</legend>
+		    <input id="size-s" name="size" type="radio" value="small" />
+		    <label for="size-s">Small</label>
+		    <input id="size-m" name="size" type="radio" value="medium" />
+		    <label for="size-m">Medium</label>
+		    <input id="size-l" name="size" type="radio" value="large" />
+		    <label for="size-l">Large</label>
+		</fieldset>
+
+		<fieldset>
+		<legend>Address</legend>
+            <div><label for="street">Street</label><br /><input type="text" name="street" id="street"></div>
+            <div><label for="postal-code">Postal code</label><br /><input type="text" name="street" id="postal-code"></div>
+            <div><label for="city">City</label><br /><input type="text" name="street" id="city"></div>
+		</fieldset>
+
+
+		</form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>

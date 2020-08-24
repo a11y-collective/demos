@@ -87,7 +87,9 @@ blockquote {
     padding: 1em;
 }
 
-::placeholder {
+::placeholder,
+::-webkit-input-placeholder {
+	color: #757575;
 	opacity: 1;
 }
 

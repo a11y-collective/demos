@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Context change on focus or input</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<link rel="stylesheet" href="stylesheet-content.css" type="text/css" media="all">
+		<script src="open-on-hover-focus.js"></script>
+	</head>
+
+	<body class="change-context">
+
+		<header>
+			<h1>Context change on focus or input</h1>
+		</header>
+
+		<main>
+		<h2>Context change on hover and focus</h2>
+		<p>An unexpected modal popup.</p>
+
+		<button onfocus="toggleDialog('dialog')" onmousemove="toggleDialog('dialog')">Open modal</button>
+		<dialog style="display:none;" id="dialog">
+			<h2>On Sale!!! Buy now!!!</h2>
+			<p>Some random text here...</p>
+
+
+			<button onclick="toggleDialog('dialog');">Please close me</button>
+		</dialog>
+
+		<h2>Context change on input</h2>
+		<p>An unexpected form submit.</p>
+
+		<form action="#" method="GET">
+
+			<label for="size">Choose a size</label>
+            <select name="number" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+			<label for="number">Choose a number</label>
+            <select name="number" id="number" onchange="showChoice(form);">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+            </select>
+
+        </form>
+
+
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>
+
+
+
