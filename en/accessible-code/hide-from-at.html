@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Hide from a screen reader</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Hide from a screen reader</h1>
+		</header>
+
+		<main>
+
+			<div class="block" id="visible">
+				<img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192">
+		        <p><a href="#visible">My awesome website</a></p>
+		        <p>Can you see me, can you hear me?</p>
+	        </div>
+
+			<h2>Attribute aria-hidden="true" </h2>
+			
+			<div class="block" id="aria-hidden">
+				<img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" aria-hidden="true">
+		        <p><a href="#visible" aria-hidden="true">My awesome website</a></p>
+		        <p aria-hidden="true">Can you see me, can you hear me?</p>
+	        </div>
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>

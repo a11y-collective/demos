@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Hide from sight</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Hide from sight</h1>
+		</header>
+
+		<main>
+
+			<div class="block" id="visible">
+			<img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192">
+	        <p><a href="#visible">My awesome website</a></p>
+	        <div>
+	            <p>Can you see me, can you hear me?</p>
+	        </div>
+
+	        </div>
+
+			<h2>HTML5 attribute hidden</h2>
+
+			<div class="block" id="hidden">
+				<img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" hidden>
+				<p><a href="#hidden" hidden>My awesome website</a></p>
+				<div hidden>
+					<p>Can you see me, can you hear me?</p>
+				</div>
+			</div>
+
+			<h2>CSS property display: none;</h2>
+
+			<div class="block" id="display-none">
+				<img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" style="display: none;">
+				<p><a href="#display-none" style="display: none;">My awesome website</a></p>
+				<div style="display: none;">
+					<p>Can you see me, can you hear me?</p>
+				</div>
+			</div>
+
+			<h2>CSS property visibility: hidden;</h2>
+
+	        <div class="block" id="visibility-hidden">
+	            <img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" style="visibility: hidden;">
+	            <p><a href="#visibility-hidden" style="visibility: hidden;">My awesome website</a></p>
+	            <div style="visibility: hidden;">
+	                <p>Can you see me, can you hear me?</p>
+	            </div>
+	        </div>
+
+            <h2>CSS property opacity: 0;</h2>
+
+            <div class="block" id="opacity-0">
+                <img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" style="opacity: 0;">
+                <p><a href="#opacity-0" style="opacity: 0;">My awesome website</a></p>
+                <div style="opacity: 0;">
+                    <p>Can you see me, can you hear me?</p>
+                </div>
+            </div>
+
+             <h2>CSS class screen-reader-text</h2>
+
+             <div class="block" id="screen-reader-text">
+                 <img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" class="screen-reader-text">
+                 <p><a href="#screen-reader-text"  class="screen-reader-text">My awesome website</a></p>
+                 <div class="screen-reader-text">
+                     <p>Can you see me, can you hear me?</p>
+                 </div>
+             </div>
+
+             <h3>CSS screen-reader-text</h3>
+             <code>
+                <pre>
+
+				</pre>
+
+
+			</code>
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>
