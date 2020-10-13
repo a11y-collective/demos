@@ -35,13 +35,18 @@ button,
     display: inline-block;
     margin: 1em 0 0.5em 0;
     padding: 1em;
-    border: solid 1px #ccc;
+    border: solid 2px #ccc;
 }
 
-.button:hover,
-.button:focus {
-    color: #fff;
-    background-color: #000;
+button:hover,
+button:focus {
+    border: solid 2px #000;
+}
+
+/** Overrule main stylesheet */
+button[aria-label]:hover::after,
+button[aria-label]:focus::after {
+    display:none;
 }
 
 .link {
