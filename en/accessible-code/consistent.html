@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Consistent and predictable naming</title>
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<link rel="stylesheet" href="stylesheet-html.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Consistent and predictable naming</h1>
+		</header>
+
+		<main>
+
+			<h2>Example: How to name a button</h2>
+			<p>Test this with a screen reader and with voice recognition software</p>
+			<div class="block">
+				<h3>No name</h3>
+
+<pre>
+&lt;button>
+  &lt;svg viewBox="0 0 20 20" focusable="false" role="presentation">
+    [...]
+  &lt;/svg>
+&lt;/button>
+</pre>
+
+				<button>
+		            <svg viewBox="0 0 20 20" class="heart" focusable="false" role="presentation">
+		                <path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+		            </svg>
+		        </button>
+			</div>
+
+			<div class="block">
+				<h3>Heart icon</h3>
+
+<pre>
+&lt;button aria-label="Heart icon">
+  &lt;svg viewBox="0 0 20 20" focusable="false" role="presentation">
+    [...]
+  &lt;/svg>
+&lt;/button>
+</pre>
+
+		        <button aria-label="Heart icon">
+		            <svg viewBox="0 0 20 20" class="heart" focusable="false" role="presentation">
+		                <path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+		            </svg>
+		        </button>
+	        </div>
+
+			<div class="block">
+				<h3>Open menu</h3>
+
+<pre>
+&lt;button aria-label="Like">
+  &lt;svg viewBox="0 0 20 20" focusable="false" role="presentation">
+    [..]
+  &lt;/svg>
+&lt;/button>
+</pre>
+
+		        <button aria-label="Like">
+		            <svg viewBox="0 0 20 20" class="heart" focusable="false" role="presentation">
+		                <path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+
+		            </svg>
+		        </button>
+	        </div>
+
+			<div class="block">
+				<h3>Menu</h3>
+
+<pre>
+&lt;button aria-label="Menu">
+  &lt;svg viewBox="0 0 20 20" focusable="false" role="presentation">
+    [..]
+  &lt;/svg>
+&lt;/button>
+</pre>
+
+		        <button aria-label="Menu">
+		            <svg viewBox="0 0 20 20" class="heart" focusable="false" role="presentation">
+		                <path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+		            </svg>
+		        </button>
+            </div>
+
+			<div class="block">
+	            <h3>Add text! As in don't make me guess</h3>
+
+<pre>
+&lt;button>
+  &lt;svg viewBox="0 0 20 20" focusable="false" role="presentation">
+    [..]
+  &lt;/svg>
+  &lt;div>Like&lt;/div>
+&lt;/button>
+</pre>
+		        <button>
+		            <svg viewBox="0 0 20 20" class="heart" focusable="false" role="presentation">
+		                <path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+		            </svg>
+		            <div>Like</div>
+		        </button>
+	        </div>
+
+		</main>
+
+		<footer>
+            <p><a href="index.html">Back to index</a></p>
+        </footer>
+
+	</body>
+
+</html>
