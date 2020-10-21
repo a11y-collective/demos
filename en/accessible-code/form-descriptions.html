@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Descriptions in forms</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Descriptions in forms</h1>
+		</header>
+
+		<main>
+
+	        <h2>Aria-describedby</h2>
+	        <p>Is additional to the label text, and is useful to add extra information.</p>
+	        <form class="block">
+	            <label for="new-password">Your new password</label>
+	            <input type="password" id="new-password" aria-describedby="new-password-description" autocomplete="off">
+	            <p id="new-password-description">Please use a password of minimal 8 characters.</p>
+	        </form>
+
+            <form class="block">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms" aria-describedby="terms-link">I agree with the terms & conditions</label>
+                <p id="terms-link">Please read <a href="#">our terms & conditions</a>.</p>
+            </form>
+
+            <h2>Fieldset</h2>
+            <form class="block">
+                <fieldset>
+	                <legend>Consent</legend>
+		            <input name="agree-consent" id="consent" type="checkbox" value="1">
+		            <label for="consent">I agree to the privacy policy.</label>
+				</fieldset>
+			</form>
+		</main>
+
+		<footer>
+			<p><a href="index.html">Back to index</a></p>
+		</footer>
+
+	</body>
+
+</html>
