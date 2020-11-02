@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Form autocomplete</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Form autocomplete</h1>
+
+	</header>
+
+	<main>
+
+		<form class="form-block">
+
+			<fieldset>
+                <legend>Your name</legend>
+                <div>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name">
+                </div>
+                <div>
+	                <label for="last-name">Last name</label>
+	                <input type="text" name="last-name" id="last-name" autocomplete="family-name">
+                </div>
+            </fieldset>
+
+			<fieldset>
+				<legend>Address</legend>
+	            <div>
+		            <label for="street">Street</label>
+		            <input type="text" name="street" id="street" autocomplete="street-address">
+	            </div>
+	            <div>
+		            <label for="postal-code">Postal code</label>
+		            <input type="text" name="street" id="postal-code" autocomplete="postal-code">
+	            </div>
+	            <div>
+		            <label for="city">City</label>
+		            <input type="text" name="city" id="city">
+	            </div>
+			</fieldset>
+
+		</form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>
