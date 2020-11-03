@@ -1,0 +1,75 @@
+/**
+ This CSS contains bad practice CSS.
+ Don't copy paste from this code.
+ */
+
+.styling.dont-do-this input {
+    display: none;
+}
+
+.styling input:checked ~ label::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.styling label {
+    cursor: pointer;
+    line-height: 30px;
+    position: relative;
+    margin-left: 35px;
+}
+
+.styling label::before, .styling label::after {
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5px;
+    left: -35px;
+    transition: all .3s ease-out;
+    z-index: 2;
+}
+
+.styling label::before {
+    content: "";
+    border: 1.5px solid #3B5F62;
+    width: 20px;
+    height: 20px;
+}
+
+.styling label::after {
+    content: " \2713";
+    background: #7BC4CA;
+    border: 1.5px solid #7BC4CA;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    transform: scale(0);
+}
+
+/** work around */
+
+.styling.do-this input {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+}
+
+.styling.do-this input:focus ~ label:before  {
+    content: "";
+    border: 3px solid #3B5F62;
+    width: 20px;
+    height: 20px;
+    top: -4px;
+    left: -37px;
+    z-index: 3;
+}

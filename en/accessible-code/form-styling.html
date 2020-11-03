@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Form styling</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		<link rel="stylesheet" href="stylesheet-dont-do-this.css" type="text/css" media="all">
+
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Styling of form controls</h1>
+
+	</header>
+
+	<main>
+
+	<h2>Native HTML</h2>
+
+        <form class="form-block">
+
+            <fieldset>
+                <legend>Choose your favourite animal</legend>
+                <div>
+                      <input type="radio" id="radio-1" name="animal" value="cat" checked="checked">
+                      <label for="radio-1">Cat</label>
+                </div>
+                <div>
+                      <input type="radio" id="radio-2" name="animal" value="dog">
+                      <label for="radio-2">Dog</label>
+                </div>
+                <div>
+                      <input type="radio" id="radio-3" name="animal" value="unicorn">
+                      <label for="radio-3">Unicorn</label>
+                </div>
+            </fieldset>
+
+        </form>
+
+
+	<h2>Bad practice: Hide the input with display: none</h2>
+
+		<form class="form-block styling dont-do-this">
+
+			<fieldset>
+                <legend>Choose your favourite animal</legend>
+                <div>
+                      <input type="radio" id="radio-4" name="animal" value="cat" checked="checked">
+                      <label for="radio-4">Cat</label>
+                </div>
+                <div>
+                      <input type="radio" id="radio-5" name="animal" value="dog">
+                      <label for="radio-5">Dog</label>
+                </div>
+                <div>
+                      <input type="radio" id="radio-6" name="animal" value="unicorn">
+                      <label for="radio-6">Unicorn</label>
+                </div>
+            </fieldset>
+
+        </form>
+
+		<h2>Good practice</h2>
+
+        <form class="form-block styling do-this">
+			<fieldset>
+                <legend>Choose your favourite animal</legend>
+                <div class="do-this-radio">
+                      <input type="radio" id="radio-7" name="animal" value="cat"  checked="checked">
+                      <label for="radio-7" >Cat</label>
+                </div>
+                <div class="do-this-radio">
+                      <input type="radio" id="radio-8" name="animal" value="dog">
+                      <label for="radio-8" >Dog</label>
+                </div>
+                <div class="do-this-radio">
+                      <input type="radio" id="radio-9" name="animal" value="unicorn">
+                      <label for="radio-9">Unicorn</label>
+                </div>
+            </fieldset>
+
+		</form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>

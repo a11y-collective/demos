@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Let's calculate</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="form-order.js"></script>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body class="wide">
+
+		<header>
+			<h1>Let's calculate</h1>
+		</header>
+
+		<main>
+
+			<div class="block" id="top-form">
+
+	                <h2>Order a t-shirt</h2>
+	                <p>Now on sale, get one for only &euro; 10!</p>
+
+	                <div id="notifications" tabindex="-1"></div>
+
+	                <form id="example-form">
+
+						<div>
+	                        <label for="size">Size</label>
+	                        <select name="size" id="size">
+	                            <option>Small</option>
+	                            <option selected>Medium</option>
+	                            <option>Large</option>
+	                        </select>
+						</div>
+
+						<div>
+							<label for="amount">Amount</label>
+							<select name="amount" id="amount">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+
+						<div>
+	                        <label for="total">Total price</label>
+	                        <input type="text" id="total" readonly name="total" value="10">
+						</div>
+
+	                    <button>Order</button>
+
+	                </form>
+
+	        </div>
+
+		</main>
+
+		<footer>
+			<p><a href="index.html">Back to index</a></p>
+		</footer>
+
+	</body>
+
+</html>
