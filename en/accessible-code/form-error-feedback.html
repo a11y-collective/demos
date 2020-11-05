@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Let's build a form</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="form.js"></script>
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body class="wide">
+
+		<header>
+			<h1>Error feedback on a form</h1>
+		</header>
+
+		<main>
+
+			<div class="block" id="top-form">
+
+	                <h2>Subscribe to our newsletter</h2>
+	                <p>Please fill out all fields and agree to the privacy policy.</p>
+
+	                <div id="notifications" tabindex="-1"></div>
+
+	                <form id="example-form">
+
+	                    <div>
+		                    <label for="name">Name</label>
+		                    <input id="name" type="text" autocomplete="name" required="required" aria-describedby="name-error desc-name">
+		                    <p class="description" id="desc-name">Give your first and last name.</p>
+		                    <p class="error-message" id="name-error"></p>
+	                    </div>
+
+						<div>
+		                    <label for="email">E-mail</label>
+		                    <input id="email" type="email" autocomplete="email" required="required" aria-describedby="email-error">
+		                    <p class="error-message" id="email-error"></p>
+						</div>
+
+						<div>
+							<input id="terms" type="checkbox" required="required"  aria-describedby="terms-error descr-terms">
+                            <label for="terms">I agree with the privacy policy</label>
+                            <p class="description" id="descr-terms"><a href="index.html">Read our privacy policy</a></p>
+                            <p class="error-message" id="terms-error"></p>
+                        </div>
+
+	                    <button>Subscribe</button>
+
+	                </form>
+
+	        </div>
+
+		</main>
+
+		<footer>
+			<p><a href="index.html">Back to index</a></p>
+		</footer>
+
+	</body>
+
+</html>
