@@ -73,3 +73,37 @@
     left: -37px;
     z-index: 3;
 }
+
+/** divs and spans */
+
+.cat {
+    background:url('../../img/IMG_0123.jpg') 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 66.64%;
+    height: 0;
+    padding-top: 66.64%;
+    margin: 0 0 1em 0;
+}
+
+.demo-card .h2 {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.desc {
+    margin: 0.5em 0;
+}
+
+span.dummy-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.dummy-link:focus {
+    outline: 1px dotted black;
+}
