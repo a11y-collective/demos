@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Inaccessible form controls</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+	</head>
+
+	<body>
+
+	<header>
+
+		<h1>Inaccessible form controls</h1>
+
+	</header>
+
+	<main>
+
+		<h2>Multiple select</h2>
+
+		<form class="form-block">
+
+           <div class="block">
+                <fieldset>
+                    <legend>Select cars</legend>
+	                <div><label for="select-brand">Brand</label></div>
+	                <select name="brand" id="select-brand" multiple>
+		                <option value="01">Opel</option>
+		                <option value="02">Volkswagen</option>
+		                <option value="03">Volvo</option>
+		                <option value="04">Peugeot</option>
+		                <option value="05">Mini</option>
+	                </select>
+	               </fieldset>
+             </div>
+
+        </form>
+
+        <h3>Alternative: checkboxes</h3>
+
+        <form class="form-block">
+
+           <div class="block">
+                <fieldset>
+                    <legend>Select cars by brand</legend>
+                        <div><input type="checkbox" value="01" id="opel"> <label for="opel">Opel</label></div>
+                        <div><input type="checkbox" value="02" id="volkswagen"> <label for="volkswagen">Volkswagen</label></div>
+                        <div><input type="checkbox" value="03" id="volvo"> <label for="volvo">Volvo</label></div>
+                        <div><input type="checkbox" value="04" id="peugeot"> <label for="peugeot">Peugeot</label></div>
+                        <div><input type="checkbox" value="05" id="mini"> <label for="mini">Mini</label></div>
+                   </fieldset>
+             </div>
+
+        </form>
+
+	</main>
+
+	<footer>
+        <p><a href="index.html">Back to index</a></p>
+    </footer>
+
+	</body>
+
+</html>
