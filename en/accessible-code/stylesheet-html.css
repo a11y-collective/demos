@@ -58,3 +58,63 @@ button[aria-label]:focus::after {
     text-decoration: none;
     cursor: pointer;
 }
+
+/** Semantics vs div/span */
+.demo-card {
+    border: solid 1px #ccc;
+    padding: 1em;
+    margin: 2em 0 1em 0;
+    display: inline-block;
+}
+
+.demo-card h2 {
+    margin: 0;
+}
+
+.demo-card .categories {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-card .categories li {
+    display: flex;
+    margin-right: 0.5em;
+}
+
+.demo-card .categories li:after {
+    content: ",";
+}
+.demo-card .categories li:last-child:after {
+    content: " ";
+}
+
+
+.demo-card dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-card dt {
+    width: 29%;
+    font-weight: 700;
+}
+
+.demo-card dd {
+    margin-left: auto;
+    width: 71%;
+}
+
+/** structure */
+
+.structure header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.structure header nav ul li {
+    margin-right: 0.5em;
+}
+

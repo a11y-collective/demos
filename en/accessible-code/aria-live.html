@@ -7,18 +7,56 @@
 		<meta name="robots" content="noindex, nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="../js/toggles.js"></script>
+		<script src="aria-live.js"></script>
 		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
 	</head>
 
 	<body>
 
 		<header>
-			<h1>aria-lived</h1>
+			<h1>aria-live</h1>
 		</header>
 
 		<main>
+			<div class="block" id="top-form">
 
+	                <h2>Order a t-shirt</h2>
+	                <p>Now on sale, get one for only &euro; 10!</p>
+
+	                <div id="notifications" tabindex="-1"></div>
+
+	                <form id="example-form">
+
+						<div class="block">
+	                        <label for="size">Size</label>
+	                        <select name="size" id="size">
+	                            <option>Small</option>
+	                            <option selected>Medium</option>
+	                            <option>Large</option>
+	                        </select>
+						</div>
+
+						<div class="block">
+							<label for="amount">Amount</label>
+							<select name="amount" id="amount">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+
+						<div class="block">
+	                        <label for="total">Total price</label>
+	                        <input type="text" id="total" readonly name="total" value="10">
+						</div>
+
+						<div role="alert">This is the alert speaking.</div>
+                        <div aria-live="assertive" aria-atomic="true">This is the aria-live speaking.</div>
+                        <div aria-live="polite" aria-atomic="true">This is the aria-live speaking.</div>
+
+	                </form>
+
+	        </div>
 
 		</main>
 
