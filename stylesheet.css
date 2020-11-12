@@ -436,3 +436,8 @@ button.expandable + [aria-hidden="false"] {
 	color: #b00;
 	font-weight: bold;
 }
+
+footer {
+	margin-top: 2em;
+	border-top: solid 2px #ccc;
+}
