@@ -22,15 +22,15 @@
 	        <h2>Aria-describedby</h2>
 	        <p>Is additional to the label text, and is useful to add extra information.</p>
 	        <form class="block">
-	            <label for="new-password">Your new password</label>
+	            <label for="new-password">Your new password</label><br />
 	            <input type="password" id="new-password" aria-describedby="new-password-description" autocomplete="off">
-	            <p id="new-password-description">Please use a password of minimal 8 characters.</p>
+	            <p id="new-password-description" class="description">Please use a password of minimal 8 characters.</p>
 	        </form>
 
             <form class="block">
                 <input type="checkbox" id="terms" name="terms">
                 <label for="terms" aria-describedby="terms-link">I agree with the terms & conditions</label>
-                <p id="terms-link">Please read <a href="#">our terms & conditions</a>.</p>
+                <p id="terms-link" class="description">Please read <a href="#">our terms & conditions</a>.</p>
             </form>
 
             <h2>Fieldset</h2>
