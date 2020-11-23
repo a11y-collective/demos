@@ -112,9 +112,32 @@ button[aria-label]:focus::after {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    list-style: none;
+}
+
+.structure header form{
+    margin: 1em 0;
 }
 
 .structure header nav ul li {
     margin-right: 0.5em;
+    list-style: none;
 }
 
+/** dialog */
+
+dialog {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 90%;
+    width: 90%;
+    background-color: #aa1111;
+    color: #fff9c0;
+    text-align: center;
+}
+/**  announce-hide */
+
+.announce-hide .block:focus-within {
+    border: solid #111 1px;
+}

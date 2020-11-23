@@ -15,14 +15,3 @@ blockquote::before {
 .change-context {
     position: relative;
 }
-
-dialog {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    height: 90%;
-    width: 90%;
-    background-color: #aa1111;
-    color: #fff9c0;
-    text-align: center;
-}

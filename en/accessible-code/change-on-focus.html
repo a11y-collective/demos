@@ -8,7 +8,7 @@
 		<title>Context change on focus or input</title>
 		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
-		<link rel="stylesheet" href="stylesheet-content.css" type="text/css" media="all">
+		<link rel="stylesheet" href="stylesheet-html.css" type="text/css" media="all">
 		<script src="open-on-hover-focus.js"></script>
 	</head>
 
@@ -20,21 +20,25 @@
 
 		<main>
 		<h2>Context change on hover and focus</h2>
-		<p>An unexpected modal popup.</p>
+		<p>An unexpected modal popup (onfocus event).</p>
 
-		<button onfocus="toggleDialog('dialog')" onmousemove="toggleDialog('dialog')">Open modal</button>
-		<dialog style="display:none;" id="dialog">
-			<h2>On Sale!!! Buy now!!!</h2>
-			<p>Some random text here...</p>
+		<div class="block">
+
+			<button onfocus="toggleDialog('dialog')" onmousemove="toggleDialog('dialog')">30% discount</button>
+			<dialog style="display:none;" id="dialog">
+				<h2>On Sale!!! Buy now!!!</h2>
+				<p>Some random text here...</p>
 
 
-			<button onclick="toggleDialog('dialog');">Please close me</button>
-		</dialog>
+				<button onclick="toggleDialog('dialog');">Please close me</button>
+			</dialog>
+
+		</div>
 
 		<h2>Context change on input</h2>
 		<p>An unexpected form submit.</p>
 
-		<form action="#" method="GET">
+		<form action="#" method="GET" class="block">
 
 			<label for="size">Choose a size</label>
             <select name="number" id="size">

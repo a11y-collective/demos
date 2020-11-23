@@ -19,7 +19,7 @@
 
 		<main>
 
-			<div class="block" id="top-form">
+			<div id="top-form">
 
 	                <h2>Subscribe to our newsletter</h2>
 	                <p>Please fill out all fields and agree to the privacy policy.</p>
@@ -28,24 +28,24 @@
 
 	                <form id="example-form">
 
-	                    <div>
-		                    <label for="name">Name</label>
+	                    <div class="block">
+		                    <label for="name">Name</label><br />
 		                    <input id="name" type="text" autocomplete="name" required="required" aria-describedby="name-error desc-name">
 		                    <p class="description" id="desc-name">Give your first and last name.</p>
-		                    <p class="error-message" id="name-error"></p>
+		                    <p class="error-message description" id="name-error"></p>
 	                    </div>
 
-						<div>
-		                    <label for="email">E-mail</label>
+						<div class="block">
+		                    <label for="email">E-mail</label><br />
 		                    <input id="email" type="email" autocomplete="email" required="required" aria-describedby="email-error">
-		                    <p class="error-message" id="email-error"></p>
+		                    <p class="error-message description" id="email-error"></p>
 						</div>
 
-						<div>
+						<div class="block">
 							<input id="terms" type="checkbox" required="required"  aria-describedby="terms-error descr-terms">
                             <label for="terms">I agree with the privacy policy</label>
                             <p class="description" id="descr-terms"><a href="index.html">Read our privacy policy</a></p>
-                            <p class="error-message" id="terms-error"></p>
+                            <p class="error-message description" id="terms-error"></p>
                         </div>
 
 	                    <button>Subscribe</button>
