@@ -16,8 +16,8 @@
 		<a href="#main" class="screen-reader-text skip-link">Jump directly to the content</a>
 
 		<header>
-
 			<nav>
+				<h2>Menu</h2>
                 <ul><li><a href="#">home</a></li><li><a href="#">about</a></li><li><a href="#">contact</a></li></ul>
             </nav>
 		</header>
@@ -25,10 +25,23 @@
 		<main id="main">
 			<h1>Skip link</h1>
 
-			<p><a href="#">first link in the main section.</a><p></p>
+			<div class="block">
+			<p>The main content. The main landmark has the id="main".</p>
+			<p>This is the <a href="#">first link in the main content.</a></p>
+			</div>
+
+			<div class="block">
 
 			<h2>HTML</h2>
-			<pre>&lt;a href="#main" class="skip-link screen-reader-text">Jump directly to the content&lt;/a></pre>
+			<pre>
+&lt;a href="#main" class="skip-link screen-reader-text">
+	Jump directly to the content
+&lt;/a>
+			</pre>
+
+			</div>
+
+			<div class="block">
 
 			<h2>CSS</h2>
 <pre>
@@ -69,24 +82,24 @@
 
 </pre>
 
+</div>
+
+
+
 			<h2>JavaScript (optional, for older browser support)</h2>
 <pre>
 ( function() {
-
-    if ( document.getElementById && window.addEventListener ) {
-
-        window.addEventListener( 'hashchange', function() {
-            var element = document.getElementById( location.hash.substring( 1 ) );
-
-            if ( element ) {
-                if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.nodeName ) ) {
-                    element.tabIndex = -1;
-                }
-
-                element.focus();
-            }
-        }, false );
-    }
+  if ( document.getElementById && window.addEventListener ) {
+    window.addEventListener( 'hashchange', function() {
+      var element = document.getElementById( location.hash.substring( 1 ) );
+      if ( element ) {
+        if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.nodeName ) ) {
+          element.tabIndex = -1;
+        }
+        element.focus();
+       }
+    }, false );
+  }
 } )();
 </pre>
 
