@@ -46,3 +46,8 @@ footer {
 h2 {
     font-size: 1.2em;
 }
+
+.sale::after {
+    content: " On sale!";
+    color: #c00;
+}
