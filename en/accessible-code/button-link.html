@@ -18,7 +18,17 @@
 		</header>
 
 		<main>
-			<h2>Recreate a button with a div</h2>
+
+			<h2>Keyboard interaction</h2>
+
+			<p>Real link:<br /><a href="http://a11y-collective.com">The A11Y Collective</a></p>
+			<p>Real button:<br /><button onclick="showAlert()">Show alert</button></p>
+
+			<p>A link without an href doesn't get keyboard focus:<br /><a>Click me</a></p>
+
+			<p>Don't change the role of a link;br /> <a onclick="myFunction()" role="button">Menu</a> </p>
+
+			<h2>Recreate a button using a div</h2>
 
 			<div class="block">
 				<p>Div with onclick:</p>
@@ -33,7 +43,7 @@ div
 onclick = "showAlert()"
 class   = "button"
 				</pre>
-				<div class="button" class="button" onclick="showAlert()">Show alert</div>
+				<div class="button" onclick="showAlert()">Show alert</div>
 			</div>
 
 			<div class="block">
@@ -65,7 +75,7 @@ onclick    = "showAlert()"
 class      = "button"
 role       = "button"
 tabindex   = "0"
-onkeypress = "showAlert()
+onkeypress = "showAlert()"
 				</pre>
 				<div class="button" role="button" tabindex="0" onclick="showAlert()" onkeypress="showAlert()">Show alert</div>
 			</div>

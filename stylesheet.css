@@ -92,7 +92,7 @@ blockquote {
 }
 
 input {
-	border: 1px solid #6c6681;
+	border-color: #949494;
 }
 ::placeholder,
 ::-webkit-input-placeholder {
@@ -437,7 +437,6 @@ button.expandable + [aria-hidden="false"] {
 	margin: 0;
 }
 
-.notification-error span,
 .error-message,
 .errors h3 {
 	color: #b00;
