@@ -122,6 +122,7 @@ button[aria-label]:focus::after {
 .structure header nav ul li {
     margin-right: 0.5em;
     list-style: none;
+<<<<<<< Updated upstream
 }
 
 /** dialog */
@@ -135,9 +136,25 @@ dialog {
     background-color: #aa1111;
     color: #fff9c0;
     text-align: center;
+=======
+>>>>>>> Stashed changes
 }
 /**  announce-hide */
 
+<<<<<<< Updated upstream
 .announce-hide .block:focus-within {
     border: solid #111 1px;
+=======
+/** dialog */
+
+dialog {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 90%;
+    width: 90%;
+    background-color: #aa1111;
+    color: #fff9c0;
+    text-align: center;
+>>>>>>> Stashed changes
 }
