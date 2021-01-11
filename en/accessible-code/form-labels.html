@@ -57,21 +57,26 @@
                 <input type="text" id="colour2" name="colour" placeholder="Type a colour">
             </div>
 
-            <div class="block">
-                <p>Different accessible name than visible:</p>
-                <label for="colour3" class="screen-reader-text">Pick a  colour</label>
-                <input type="text" id="colour3" name="colour" placeholder="What's your favourite colour?">
-            </div>
-
             <h2>Alternatives</h2>
+
             <div class="block">
                 <p>Implicit label:</p>
+ <pre>
+&lt;label for="colour5">What's your favourite colour?
+    &lt;input type="text" id="colour5" name="colour">
+&lt;/label>
+</pre>
+
                 <label for="colour5">What's your favourite colour?<br />
                     <input type="text" id="colour5" name="colour">
                 </label>
             </div>
 
             <div class="block">
+ <pre>
+&lt;input type="text" id="size" name="size"
+   aria-label="Size" placeholder="Size">
+</pre>
                 <p>Use an aria-label (not preferred)</p>
                 <input type="text" id="size" name="size" aria-label="Size" placeholder="Size">
             </div>

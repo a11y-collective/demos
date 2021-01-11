@@ -45,12 +45,10 @@
 							</select>
 						</div>
 
-						<div class="block">
-	                        <label for="total">Total price &euro;</label>
-	                        <input type="text" id="total" readonly name="total" value="10">
-						</div>
-
-						<p>Total price: &euro; <span id="total">10</span></p>
+						<div class="block" aria-live="polite" aria-atomic="true">
+                        	<label for="total">Total price &euro;</label>
+                        	<input type="text" id="total" readonly name="total" value="10">
+                        </div>
 
 						<button name="order">Order</button>
 
