@@ -21,115 +21,17 @@
 
 			<h2>Keyboard interaction</h2>
 
-			<p>Real link:<br /><a href="http://a11y-collective.com">The A11Y Collective</a></p>
-			<p>Real button:<br /><button onclick="showAlert()">Show alert</button></p>
+			<p>Real link:<br />
+			<a href="http://a11y-collective.com">The A11Y Collective</a></p>
 
-			<p>A link without an href doesn't get keyboard focus:<br /><a>Click me</a></p>
+			<p>Real button:<br />
+			<button onclick="showAlert()">Show alert</button></p>
 
-			<p>Don't change the role of a link;br /> <a onclick="myFunction()" role="button">Menu</a> </p>
+			<p>A link without an href doesn't get keyboard focus:<br />
+			<a>Click me</a></p>
 
-			<h2>Recreate a button using a div</h2>
-
-			<div class="block">
-				<p>Div with onclick:</p>
-				<pre>div onclick="showAlert()"</pre>
-				<div onclick="showAlert()">Show alert</div>
-			</div>
-
-			<div class="block">
-				<p>Add CSS:</p>
-				<pre>
-div
-onclick = "showAlert()"
-class   = "button"
-				</pre>
-				<div class="button" onclick="showAlert()">Show alert</div>
-			</div>
-
-			<div class="block">
-				<p>Add role="button":</p>
-				<pre>
-div
-onclick = "showAlert()"
-class   = "button"
-role    = "button"
-				</pre>
-				<div class="button" role="button" onclick="showAlert()">Show alert</div>
-			</div>
-
-			<div class="block">
-				<p>Add tabindex=0:</p>
-				<pre>
-div
-role     = "button"
-onclick  = "showAlert()"
-class    = "button"
-tabindex = "0"
-				</pre>
-				<div class="button" role="button" tabindex="0" onclick="showAlert()">Show alert</div>
-			</div>
-			<div class="block">
-				<pre>
-div
-onclick    = "showAlert()"
-class      = "button"
-role       = "button"
-tabindex   = "0"
-onkeypress = "showAlert()"
-				</pre>
-				<div class="button" role="button" tabindex="0" onclick="showAlert()" onkeypress="showAlert()">Show alert</div>
-			</div>
-
-			<div class="block">
-				<p>And if you have a toggle button you also can add aria-pressed to tell a screen reader it's a toggle.</p>
-				<p>See for an example of aria-pressed MDN <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role">ARIA: button role</a>.</p>
-            </div>
-
-			<h3>Recommended: use a button</h3>
-			<div class="block">
-				<p>Native HTML button and onclick:</p>
-				<pre>button onclick="showAlert()"</pre>
-				<button onclick="showAlert()">Show alert</button>
-			</div>
-
-			<h2>Recreate a link with a span</h2>
-			<div class="block">
-				<p>Span with onclick:</p>
-				<pre>span onclick="location.href='http://a11y-collective.com';"</pre>
-				<p>
-					<span onclick="location.href='http://a11y-collective.com';">a11y-collective.com</span>
-				</p>
-			</div>
-
-				<div class="block">
-                    <p>Add some extra CSS to make it look like a link.</p>
-                    <pre>
-span
-class = "dummy-link"
-                    </pre>
-                    <p>
-                        <span class="dummy-link" onclick="location.href='http://a11y-collective.com';">The A11Y Collective</span>
-                    </p>
-                </div>
-
-			<div class="block">
-                <p>Add an onkeypress event, role=link, tabindex=0, some extra CSS:</p>
-                <pre>
-span
-role       = "link"
-tabindex   = "0"
-class      = "link"
-onclick    = "location.href='http://a11y-collective.com'"
-onkeypress = "location.href='http://a11y-collective.com'"
-				</pre>
-                    <span role="link" tabindex="0" class="dummy-link" onclick="location.href='http://a11y-collective.com';" onkeypress="location.href='http://a11y-collective.com';">The A11Y Collective</span>
-                </p>
-            </div>
-
-			<h3>Recommended: use an anchor</h3>
-						<div class="block">
-			<a href="http://a11y-collective.com">The A11Y Collective</a>
-</div>
+			<p>Don't change the role of a link<br />
+			<a onclick="showAlert()" role="button">Menu</a> </p>
 
 		</main>
 		<footer>
