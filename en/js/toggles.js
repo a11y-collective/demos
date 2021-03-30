@@ -11,13 +11,9 @@ $(document).ready(function() {
             return attr === 'true' ? 'false' : 'true'
         });
 
-        //$this.next().attr('aria-hidden', function (i, attr) {
-        //    return attr === 'true' ? 'false' : 'true'
-        //});
+        const hiddenAttr = $this.next().attr('hidden');
 
-        let hiddenAttr = $this.next().attr('hidden');
-
-        if ( hiddenAttr === undefined ) {
+        if ( typeof hiddenAttr === 'undefined' ) {
             $this.next().attr('hidden','');
         } else {
             $this.next().removeAttr( hiddenAttr );
