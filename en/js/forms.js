@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
-    $('button').on('click', function(e) {
+    $('button').on('click', function() {
 
-        $('#errors').html('<h3 class="error-list">There are errors in your form</h3><ul class="error-list-ul">');
+        const errors = $('#errors');
+        let error    = false;
+
+        errors.html('<h3 class="error-list">There are errors in your form</h3><ul class="error-list-ul">');
 
         if ( $('#name').val() === '' ) {
             $('.error-list-ul').append('<li><a href="#name">Please enter your name.</a></li>');
@@ -16,7 +19,7 @@ $(document).ready(function() {
         }
 
         if ( ! error ) {
-            $('#errors').html('');
+            errors.html('');
             $('#name-error').html('');
             $('#email-error').html('');
         }
@@ -27,3 +30,4 @@ $(document).ready(function() {
     });
 
 });
+

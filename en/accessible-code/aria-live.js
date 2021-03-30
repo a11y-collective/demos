@@ -1,18 +1,14 @@
 $(document).ready(function() {
 
-    $('#amount').on( "change", function(e) {
-        let amount = parseInt($("#amount").val());
-        let price = 10;
+    $('#amount').on( "change", function() {
+        const amount = parseInt( $("#amount").val() );
+        const price  = 10;
+        const result = $('#total');
 
-        total =  amount * price;
-        $('#total').text(total);
-        $('#total').val(total);
+        let total  =  amount * price;
+
+        result.text( total );
+        result.val( total );
     });
 
-    function calcTotal( amount, price) {
-        return amount * price;
-    }
-
 });
-
-
