@@ -24,12 +24,24 @@
 			<div class="block">
 				<fieldset>
 				    <legend>How many cookies?</legend>
-				    <label for="unique-id-for-amount">Amount</label>
-				    <select name="amount" id="unique-id-for-amount">
+				    <label for="unique-id-for-amount1">Amount</label>
+				    <select name="amount" id="unique-id-for-amount1">
 				        <option value="one">One</option>
 				        <option value="two">Two</option>
 				        <option value="three">Three</option>
 				    </select>
+				</fieldset>
+			</div>
+
+			<div class="block">
+				<fieldset>
+					<legend>How many doughnuts?</legend>
+					<label for="unique-id-for-amount2">Amount</label>
+					<select name="amount" id="unique-id-for-amount2">
+						<option value="one">One</option>
+						<option value="two">Two</option>
+						<option value="three">Three</option>
+					</select>
 				</fieldset>
 			</div>
 
@@ -47,10 +59,36 @@
 
 			<div class="block">
 				<fieldset>
-				<legend>Address</legend>
-		            <div><label for="street">Street</label><br /><input type="text" name="street" id="street"></div>
-		            <div><label for="postal-code">Postal code</label><br /><input type="text" name="street" id="postal-code"></div>
-		            <div><label for="city">City</label><br /><input type="text" name="city" id="city"></div>
+					<legend>Shipping address</legend>
+		            <div>
+						<label for="shipping-street" class="new-line">Street</label>
+						<input type="text" name="shipping-street" id="shipping-street" autocomplete="address-line1">
+					</div>
+		            <div>
+						<label for="shipping-postal-code" class="new-line">Postal code</label>
+						<input type="text" name="shipping-postal-code" id="shipping-postal-code" autocomplete="postal-code"></div>
+		            <div>
+						<label for="shipping-city" class="new-line">City</label>
+						<input type="text" name="shipping-city" id="shipping-city" autocomplete="address-level2">
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="block">
+				<fieldset>
+					<legend>Billing address</legend>
+					<div>
+						<label for="billing-street" class="new-line">Street</label>
+						<input type="text" name="shipping-street" id="billing-street" autocomplete="address-line1">
+					</div>
+					<div>
+						<label for="billing-postal-code" class="new-line">Postal code</label>
+						<input type="text" name="billing-postal-code" id="billing-postal-code" autocomplete="postal-code">
+					</div>
+					<div>
+						<label for="billing-city" class="new-line">City</label>
+						<input type="text" name="billing-city" id="billing-city" autocomplete="address-level2">
+					</div>
 				</fieldset>
 			</div>
 
