@@ -23,6 +23,7 @@ p.narrow {
 p.right-width {
     max-width: 40em;
 }
+
 .twitter {
 	width: 4em;
 	fill: #1da1f2
@@ -303,12 +304,11 @@ button:focus + [role="tooltip"] {
 	margin: 1em 0;
 }
 
-/* Tooltip on emoij. */
+/* Tooltip on emoji. */
 
 span.tooltip {
 	position: relative;
 }
-
 
 span.tooltip:hover::after,
 span.tooltip:focus::after{
@@ -329,8 +329,6 @@ span.tooltip:focus::after {
 	display:block
 }
 
-
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -344,6 +342,7 @@ span.tooltip:focus::after {
 	width: 1px;
 	word-wrap: normal;
 }
+
 /* Skip links (works together with .screen-reader-text). */
 .skip-link {
 	background-color: #eee;
@@ -441,6 +440,10 @@ button.expandable + [aria-hidden="false"] {
 .errors h3 {
 	color: #b00;
 	font-weight: bold;
+}
+
+.new-line {
+	display: block;
 }
 
 footer {
