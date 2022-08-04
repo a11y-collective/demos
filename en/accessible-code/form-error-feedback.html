@@ -6,6 +6,9 @@
 		<title>Let's build a form</title>
 		<meta name="robots" content="noindex, nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
+		<link rel="icon"
+			  type="image/png"
+			  href="https://a11y-collective.github.io/demos/favicon.ico">
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="form.js"></script>
 		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
@@ -42,9 +45,9 @@
 						</div>
 
 						<div class="block">
+							<p class="description" id="descr-terms"><a href="index.html">Read our privacy policy</a></p>
 							<input id="terms" type="checkbox" required="required"  aria-describedby="terms-error descr-terms">
                             <label for="terms">I agree with the privacy policy</label>
-                            <p class="description" id="descr-terms"><a href="index.html">Read our privacy policy</a></p>
                             <p class="error-message description" id="terms-error"></p>
                         </div>
 
