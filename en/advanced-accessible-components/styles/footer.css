@@ -1,0 +1,29 @@
+.footer {
+	background-color: #4a0909;
+	padding: 40px 16px;
+	margin-top: 100px;
+}
+
+.footer ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer a:hover,
+.footer a:focus {
+	text-decoration: none;
+}

@@ -1,0 +1,53 @@
+.featured {
+	height: 350px;
+	background: url(../assets/posters/neon-planet-banner.webp);
+	background-repeat: no-repeat;
+	backdrop-filter: blur(20px);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 170px;
+	margin-inline: -16px;
+	position: relative;
+}
+
+.featured__overlay {
+	height: 100%;
+	backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.featured__teaser {
+	max-width: 800px;
+	max-height: 100%;
+	margin-inline: 16px;
+}
+
+.featured__teaser h2 {
+	background-color: #fff;
+	border-radius: 16px;
+	display: inline-block;
+	padding: 20px;
+}
+
+@media (min-width: 724px) {
+	.featured {
+		height: 550px;
+	}
+
+	.featured__title {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.featured__teaser {
+		position: absolute;
+		right: 32px;
+		flex-direction: row;
+		transform: translateY(50px);
+		bottom: 0;
+	}
+}

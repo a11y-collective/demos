@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="stylesheet" href="../buttons.css" />
+		<link rel="stylesheet" href="./teaser.css" />
+		<title>Teaser</title>
+	</head>
+	<body>
+		<h1>Teaser component</h1>
+
+		<h2>Featured movie poster of the week</h2>
+		<div class="teaser">
+			<div class="teaser__image-container">
+				<img
+					class="teaser__image"
+					src="./streets-of-regret.jpg"
+					alt="Streets of regret poster"
+				/>
+			</div>
+			<div class="teaser__content">
+				<h3 class="teaser__title">
+					<a class="teaser__link" href="#">Streets of Regret poster</a>
+				</h3>
+				<div>
+					<p class="teaser__price">
+						<span class="sr-only">Price: </span>
+						<span>€9,95</span>
+						<abbr title="Exclusive">excl.</abbr>
+						<abbr title="Value Added Tax">VAT</abbr>
+					</p>
+					<span class="teaser__secondary">
+						<button class="button button--red">
+							<svg
+								class="button__icon"
+								aria-hidden="true"
+								viewBox="0 0 20 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								role="presentation"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+									fill="currentColor"
+								/>
+							</svg>
+							<span class="button__text">
+								Add to cart
+								<span class="sr-only">: Streets of Regret poster</span>
+							</span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

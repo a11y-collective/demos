@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="stylesheet" href="../buttons.css" />
+		<link rel="stylesheet" href="./form.css" />
+		<script src="./form.js" defer></script>
+		<title>Form</title>
+	</head>
+	<body>
+		<h1>Form component</h1>
+		<form class="form js-form" novalidate action="#">
+			<fieldset class="form__data">
+				<legend>Subscribe now</legend>
+				<div class="form__name">
+					<label
+						for="firstname"
+						data-validation="We need your first name to address you correctly"
+					>
+						<span class="form__field-name">First name</span>
+						<span aria-hidden="true" class="form__required">(required)</span>
+					</label>
+					<input
+						aria-describedby="firstname-validation"
+						required
+						id="firstname"
+						name="firstname"
+						type="text"
+						autocomplete="given-name"
+					/>
+					<small id="firstname-validation" class="form__validation"></small>
+				</div>
+				<div class="form__name">
+					<label
+						for="lastname"
+						data-validation="We need your last name to address you correctly"
+					>
+						<span class="form__field-name">Last name</span>
+						<span aria-hidden="true" class="form__required">(required)</span>
+					</label>
+					<input
+						aria-describedby="lastname-validation"
+						required
+						id="lastname"
+						name="lastname"
+						type="text"
+						autocomplete="family-name"
+					/>
+					<small id="lastname-validation" class="form__validation"></small>
+				</div>
+				<div class="form__email">
+					<label
+						for="email"
+						data-validation="We need your email address to be able to send you the newsletter"
+					>
+						<span class="form__field-name">Email address</span>
+						<span aria-hidden="true" class="form__required">(required)</span>
+					</label>
+					<input
+						aria-describedby="email-validation"
+						required
+						id="email"
+						name="email"
+						type="email"
+						autocomplete="email"
+					/>
+					<small id="email-validation" class="form__validation"></small>
+				</div>
+			</fieldset>
+
+			<button class="button button--red" type="submit">Subscribe</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="./tabs.css">
+	<script src="./tabs.js" defer></script>
+	<title>Tabs</title>
+</head>
+<body>
+	<h1>Tabs component</h1>
+	<div class="tabs">
+		<h2>Product information</h2>
+		<div role="tablist">
+			<button
+				role="tab"
+				id="tab-1"
+				aria-selected="true"
+				aria-controls="panel-1"
+				tabindex="0"
+			>
+				Description
+			</button>
+			<button
+				role="tab"
+				id="tab-2"
+				aria-selected="false"
+				aria-controls="panel-2"
+				tabindex="-1"
+			>
+				Details
+			</button>
+			<button
+				role="tab"
+				id="tab-3"
+				aria-selected="false"
+				aria-controls="panel-3"
+				tabindex="-1"
+			>
+				Reviews
+			</button>
+		</div>
+
+		<div
+			role="tabpanel"
+			id="panel-1"
+			aria-labelledby="tab-1"
+		>
+			<h3>Description</h3>
+			<p>‘Neon Planet: A New World’ is an 80’s sci-fi adventure on a neon-lit alien planet. A team explores its <a href="#">dangerous terrain</a>, uncovering secrets and battling forces. With cutting-edge effects, action, and a synth-pop soundtrack, it’s a thrilling journey to the edge of the galaxy. Get ready for an unforgettable sci-fi experience!!</p>
+		</div>
+		<div
+			role="tabpanel"
+			id="panel-2"
+			aria-labelledby="tab-2"
+			aria-hidden="true"
+		>
+			<h3>Details</h3>
+			<dl>
+				<dt>Genre</dt>
+				<dd>Science Fiction</dd>
+				<dt>Release Date</dt>
+				<dd>1983</dd>
+				<dt>Format</dt>
+				<dd>DVD, Blu-ray, Digital</dd>
+				<dt>Language</dt>
+				<dd>English</dd>
+			</dl>
+		</div>
+		<div
+			role="tabpanel"
+			id="panel-3"
+			aria-labelledby="tab-3"
+			aria-hidden="true"
+		>
+			<h3>Reviews</h3>
+			<h3>A thrilling adventure</h3>
+			<p>‘Neon Planet: A New World’ is a thrilling sci-fi adventure with a great soundtrack. The special effects are cutting-edge for its time and the action is non-stop. A must-watch for fans of 80’s sci-fi.</p>
+			<h3>Top notch for its time</h3>
+			<p>I highly recommend ‘Neon Planet: A New World’ - the sci-fi adventure will have you on the edge of your seat. The soundtrack is fantastic and the effects are top-notch for its time. A classic for 80’s sci-fi fans.</p>
+		</div>
+	</div>
+</body>
+</html>
