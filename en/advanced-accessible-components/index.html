@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Poster Shop - Silver Screen Scene</title>
+		<meta name="description" content="Check out our collection of awesome movie posters!" />
+		<link rel="icon" href="./assets/favicon.png" />
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<link rel="stylesheet" href="./styles/featured.css" />
+		<link rel="stylesheet" href="./components/teaser/teaser.css" />
+		<link rel="stylesheet" href="./components/buttons.css" />
+		<link rel="stylesheet" href="./components/dialog/dialog.css" />
+		<link rel="stylesheet" href="./components/hamburger/hamburger.css" />
+		<script src="./components/focusTrap.js" defer></script>
+		<script src="./components/dialog/dialog.js" defer></script>
+		<script src="./components/hamburger/hamburger.js" defer></script>
+	</head>
+	<body>
+		<a class="skiplink" href="#maincontent">Skip to main content</a>
+		<header>
+			<div class="header">
+				<span
+					class="header__logo"
+				>
+					<svg
+						aria-hidden="true"
+						viewBox="0 0 16 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						role="presentation"
+					>
+						<path
+							d="M14 0V2H12V0H4V2H2V0H0V18H2V16H4V18H12V16H14V18H16V0H14ZM4 14H2V12H4V14ZM4 10H2V8H4V10ZM4 6H2V4H4V6ZM14 14H12V12H14V14ZM14 10H12V8H14V10ZM14 6H12V4H14V6Z"
+							fill="currentColor"
+						/>
+					</svg>
+					<span>Silver Screen Scene</span>
+				</span>
+
+				<div class="header__ui">
+					<div class="js-hamburger-menu">
+						<button
+						aria-expanded="false"
+						aria-label="Open navigation menu"
+						class="header__menu js-menu-button"
+						>
+							<svg
+							class="header__menu-icon"
+							viewBox="0 0 24 19"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							role="presentation"
+							>
+								<line y1="1.5" x2="24" y2="1.5" stroke="white" stroke-width="3" />
+								<line y1="9.5" x2="18" y2="9.5" stroke="white" stroke-width="3" />
+								<line y1="17.5" x2="12" y2="17.5" stroke="white" stroke-width="3" />
+							</svg>
+							<span>Menu</span>
+						</button>
+						<nav
+						aria-hidden="true"
+						class="hamburger-dropdown js-navigation"
+						aria-label="Main"
+						>
+							<ul class="hamburger-dropdown__list">
+								<li class="hamburger-dropdown__list-item">
+									<a href="./index.html" aria-current="page">All Posters</a>
+									<button
+										class="hamburger-dropdown__toggle js-sub-button"
+										aria-label="Submenu"
+										aria-expanded="false"
+									>
+										<svg
+											aria-hidden="true"
+											width="17"
+											height="10"
+											viewBox="0 0 17 10"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											role="presentation"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L8.5 7.08579L15.2929 0.292893C15.6834 -0.0976311 16.3166 -0.0976311 16.7071 0.292893C17.0976 0.683417 17.0976 1.31658 16.7071 1.70711L9.20711 9.20711C8.81658 9.59763 8.18342 9.59763 7.79289 9.20711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+												fill="white"
+											/>
+										</svg>
+									</button>
+									<ul class="hamburger-dropdown__submenu" aria-hidden="true">
+										<li><a href="#">Western</a></li>
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Adventure</a></li>
+										<li><a href="#">Comedy</a></li>
+										<li><a href="#">Sci-fi</a></li>
+									</ul>
+								</li>
+								<li class="hamburger-dropdown__list-item"><a href="./products/neon-planet-a-new-world.html">Example Product</a></li>
+								<li class="hamburger-dropdown__list-item"><a href="./faq.html">Example FAQ</a></li>
+								<li class="hamburger-dropdown__list-item"><a href="./subscribe.html">Example Subscribe Form</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button class="header__cart js-open-dialog">
+						<span class="sr-only">Cart</span>
+						<svg
+							class="header__cart-icon"
+							aria-hidden="true"
+							viewBox="0 0 20 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							role="presentation"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+								fill="white"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main id="maincontent">
+			<h1 class="sr-only">Silver Screen Scene movie posters</h1>
+			<div class="full-width">
+				<div class="featured">
+					<div class="featured__overlay">
+						<div class="featured__teaser">
+							<h2>Featured poster</h2>
+							<div class="teaser">
+								<div class="teaser__image-container">
+									<img
+										class="teaser__image"
+										src="./assets/posters/neon-planet-a-new-world.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="teaser__content">
+									<h3 class="teaser__title">
+										<a class="teaser__link" href="./products/neon-planet-a-new-world.html">Neon Planet - A New World poster</a>
+									</h3>
+									<div>
+										<p class="teaser__price">
+											<span class="sr-only">Price: </span>
+											<span>€9,95</span>
+											<abbr title="Exclusive">excl.</abbr>
+											<abbr title="Value Added Tax">VAT</abbr>
+										</p>
+										<span class="teaser__secondary">
+											<button class="button button--red js-open-dialog">
+												<svg
+													class="button__icon"
+													aria-hidden="true"
+													viewBox="0 0 20 18"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+													role="presentation"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+														fill="currentColor"
+													/>
+												</svg>
+												<span class="button__text">
+													Add to cart
+													<span class="sr-only">: Neon Planet - A New World poster</span>
+												</span>
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popular centered">
+				<h2 class="popular__title">Popular this week</h2>
+				<div class="popular__container">
+					<div class="teaser">
+						<div class="teaser__image-container">
+							<img
+								class="teaser__image"
+								src="./assets/posters/streets-of-regret.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="teaser__content">
+							<h3 class="teaser__title">
+								<a class="teaser__link" href="./products/neon-planet-a-new-world.html">Streets of Regret poster<span class="sr-only"> (actually links to Neon Planet - A New World because this is a demo site)</span></a>
+							</h3>
+							<div>
+								<p class="teaser__price">
+									<span class="sr-only">Price: </span>
+									<span>€14,95</span>
+									<abbr title="Exclusive">excl.</abbr>
+									<abbr title="Value Added Tax">VAT</abbr>
+								</p>
+								<span class="teaser__secondary">
+									<button class="button button--red js-open-dialog">
+										<svg
+											class="button__icon"
+											aria-hidden="true"
+											viewBox="0 0 20 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											role="presentation"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+												fill="currentColor"
+											/>
+										</svg>
+										<span class="button__text">
+											Add to cart
+											<span class="sr-only">: Streets of Regret poster</span>
+										</span>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="teaser">
+						<div class="teaser__image-container">
+							<img
+								class="teaser__image"
+								src="./assets/posters/the-dancing-elephant.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="teaser__content">
+							<h3 class="teaser__title">
+								<a class="teaser__link" href="./products/neon-planet-a-new-world.html">The Dancing Elephant poster<span class="sr-only"> (actually links to Neon Planet - A New World because this is a demo site)</span></a>
+							</h3>
+							<div>
+								<p class="teaser__price">
+									<span class="sr-only">Price: </span>
+									<span>€9,95</span>
+									<abbr title="Exclusive">excl.</abbr>
+									<abbr title="Value Added Tax">VAT</abbr>
+								</p>
+								<span class="teaser__secondary">
+									<button class="button button--red js-open-dialog">
+										<svg
+											class="button__icon"
+											aria-hidden="true"
+											viewBox="0 0 20 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											role="presentation"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+												fill="currentColor"
+											/>
+										</svg>
+										<span class="button__text">
+											Add to cart
+											<span class="sr-only">: The Dancing Elephant poster</span>
+										</span>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="teaser">
+						<div class="teaser__image-container">
+							<img
+								class="teaser__image"
+								src="./assets/posters/tales-from-the-frontier.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="teaser__content">
+							<h3 class="teaser__title">
+								<a class="teaser__link" href="./products/neon-planet-a-new-world.html">Tales from the Frontier poster<span class="sr-only"> (actually links to Neon Planet - A New World because this is a demo site)</span></a>
+							</h3>
+							<div>
+								<p class="teaser__price">
+									<span class="sr-only">Price: </span>
+									<span>€9,95</span>
+									<abbr title="Exclusive">excl.</abbr>
+									<abbr title="Value Added Tax">VAT</abbr>
+								</p>
+								<span class="teaser__secondary">
+									<button class="button button--red js-open-dialog">
+										<svg
+											class="button__icon"
+											aria-hidden="true"
+											viewBox="0 0 20 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											role="presentation"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M2 2.5V3.5H18V2.5H2ZM0 2.25V4.5V15.75C0 16.7165 0.783502 17.5 1.75 17.5H18.25C19.2165 17.5 20 16.7165 20 15.75V4.5V2.25C20 1.2835 19.2165 0.5 18.25 0.5H1.75C0.783502 0.5 0 1.2835 0 2.25ZM18 15.5V5.5H2V15.5H18ZM7.25 7.5C7.25 6.94772 6.80228 6.5 6.25 6.5C5.69772 6.5 5.25 6.94772 5.25 7.5C5.25 8.75978 5.75044 9.96796 6.64124 10.8588C7.53204 11.7496 8.74022 12.25 10 12.25C11.2598 12.25 12.468 11.7496 13.3588 10.8588C14.2496 9.96796 14.75 8.75978 14.75 7.5C14.75 6.94772 14.3023 6.5 13.75 6.5C13.1977 6.5 12.75 6.94772 12.75 7.5C12.75 8.22935 12.4603 8.92882 11.9445 9.44454C11.4288 9.96027 10.7293 10.25 10 10.25C9.27065 10.25 8.57118 9.96027 8.05546 9.44454C7.53973 8.92882 7.25 8.22935 7.25 7.5Z"
+												fill="currentColor"
+											/>
+										</svg>
+										<span class="button__text">
+											Add to cart
+											<span class="sr-only">: Tales from the Frontier poster</span>
+										</span>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<nav aria-label="Footer">
+				<ul>
+					<li><a href="#">Accessibility statement</a></li>
+					<li><a href="#">Downloads</a></li>
+					<li><a href="#">Privacy statement</a></li>
+				</ul>
+			</nav>
+		</footer>
+		<dialog class="dialog" aria-label="Cart">
+			<div class="dialog__card">
+				<div class="dialog__confirmation">
+					<svg
+						aria-hidden="true"
+						width="19"
+						height="16"
+						viewBox="0 0 19 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						role="presentation"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M18.7024 2.45244L16.3691 0.119107C16.2071 -0.0397024 15.9478 -0.0397024 15.7858 0.119107L5.95244 9.95244C5.79042 10.1112 5.53113 10.1112 5.36911 9.95244L3.03577 7.61911C2.87376 7.4603 2.61446 7.4603 2.45244 7.61911L0.119107 9.95244C-0.0397024 10.1145 -0.0397024 10.3738 0.119107 10.5358L5.36911 15.7858C5.53113 15.9446 5.79042 15.9446 5.95244 15.7858L18.7024 3.03577C18.8612 2.87376 18.8612 2.61446 18.7024 2.45244Z"
+							fill="#0F7C6A"
+						/>
+					</svg>
+					<p>"Example poster" has been added to your cart</p>
+				</div>
+				<button class="button button--red">
+					<span class="button__text">Proceed to checkout</span>
+				</button>
+				<button class="button button--red js-close-dialog">
+					<span class="button__text">Continue shopping</span>
+				</button>
+			</div>
+		</dialog>
+	</body>
+</html>

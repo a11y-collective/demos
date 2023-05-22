@@ -1,0 +1,82 @@
+.header {
+	height: 5rem;
+	background-color: #4a0909;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .button:focus-visible {
+	outline: 2px solid #fff !important;
+}
+
+.header__menu {
+	background-color: transparent;
+	border: none;
+	color: white;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	text-transform: lowercase;
+	font-weight: 700;
+	font-size: 1rem;
+	padding: 14px;
+	border-radius: 9999px;
+}
+
+.header__menu-icon {
+	height: 1rem;
+}
+
+.header__logo {
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 700;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+}
+
+a.header__logo:hover, a.header__logo:focus {
+	text-decoration: underline;
+}
+
+.header__logo svg {
+	height: 2rem;
+	width: 2rem;
+	color: white;
+}
+
+.header__ui {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+}
+
+.header__cart {
+	background-color: #b11515;
+	display: flex;
+	height: 3rem;
+	width: 3rem;
+	padding: 14px;
+	border-radius: 9999px;
+	border: none;
+	color: white;
+}
+
+.header__cart-icon {
+	height: 100%;
+	width: 100%;
+}
+
+.header__cart:hover,
+.header__cart:focus,
+.header__menu:hover,
+.header__menu:focus {
+	background-color: #0f7c6a;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../components/styles.css" />
+        <link rel="stylesheet" href="../../components/navigation/navigation.css" />
+		<script src="../../components/navigation/navigation.js" defer></script>
+		<title>Boo! No skiplink 👎</title>
+	</head>
+	<body style="display: flex; flex-direction: column; gap: 40px;">
+		<header>            
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#item-1" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__item js-has-submenu" data-expanded="false">
+                        <a href="#item-2" class="navigation__link">Our services</a>
+                        <button
+                            class="navigation__button js-button"
+                            aria-label="Submenu of Our services"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <ul aria-hidden="true" class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 1</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 2</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 3</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 4</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 5</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item js-has-submenu">
+                        <a href="#item-3" class="navigation__link">What we stand for</a>
+                        <button
+                            class="navigation__button js-button"
+                            aria-label="Submenu of What we stand for"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <ul aria-hidden="true" class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 1</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 2</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 3</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 4</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 5</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item js-has-submenu">
+                        <a href="#item-4" class="navigation__link">Get to know our team</a>
+                        <button
+                            class="navigation__button js-button"
+                            aria-label="Submenu of Get to know our team"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <ul aria-hidden="true" class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 1</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 2</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 3</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 4</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 5</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item js-has-submenu">
+                        <a href="#item-4" class="navigation__link">Contact us</a>
+                        <button
+                            class="navigation__button js-button"
+                            aria-label="Submenu of Contact us"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <ul aria-hidden="true" class="navigation__submenu">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 1</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 2</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 3</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 4</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 5</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="">Sub-item 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+		</header>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="flex: 1 1 20%;max-width:300px;">
+                <nav aria-label="Categories navigation">
+                    Categories
+                    <ul>
+                        <li>
+                            <a href="#">Aenean commodo ligula eget dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Phasellus volutpat metus eget</a>
+                        </li>
+                        <li>
+                            <a href="#">Aenean commodo ligula eget</a>
+                        </li>
+                        <li>
+                            <a href="#">Nunc interdum lacus</a>
+                        </li>
+                        <li>
+                            <a href="#">Fusce vulputate eleifend sapien</a>
+                        </li>
+                        <li>
+                            <a href="#">Proin pretium leo</a>
+                        </li>
+                        <li>
+                            <a href="#">Aenean commodo ligula eget dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Aenean commodo ligula eget dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Aenean commodo ligula eget dolor</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main id="maincontent" style="max-width: 60ch">
+                <h1>Skiplink component</h1>
+                <p>
+                    This is the main content, tab to reveal skiplink and press enter to skip
+                    to this part of the page
+                    <a href="#">Super interesting link in main</a>
+                </p>
+                
+                <p>Nunc nonummy metus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus quis mi. Nullam dictum felis eu pede mollis pretium.</p>
+
+                <p>Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Etiam imperdiet imperdiet orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</p>
+
+                <p>Phasellus tempus. Vivamus laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ac felis sit amet ligula pharetra condimentum.</p>
+
+                <p>Fusce fermentum. Donec mollis hendrerit risus. Nulla sit amet est. Maecenas malesuada. Praesent ac sem eget est egestas volutpat.</p>
+
+                <p>Quisque id mi. Quisque id mi. Vestibulum fringilla pede sit amet augue. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Aliquam eu nunc.</p>
+            </main>
+        </div>
+	</body>
+</html>

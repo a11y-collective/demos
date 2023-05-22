@@ -1,0 +1,70 @@
+.accordion {
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.accordion__details {
+	background-color: white;
+	border-radius: 16px;
+	box-shadow: 0px 4px 8px rgba(102, 102, 102, 0.2);
+	position: relative;
+}
+
+.accordion__details > * + * {
+	padding-top: 10px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.accordion__summary {
+	cursor: pointer;
+	padding: 24px;
+	position: relative;
+}
+
+.accordion__summary:hover > *, 
+.accordion__summary:focus-visible > * {
+	text-decoration: underline;
+}
+
+/* Bigger click target */
+.accordion__summary::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.accordion__summary > * {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	font-weight: 500;
+	margin: 0;
+}
+
+.accordion__summary + * {
+	margin-top: 0;
+}
+
+/* Can't be animated 🤷‍♂️ */
+.accordion__summary::-webkit-details-marker,
+.accordion__summary::marker {
+	display: none;
+	content: "";
+}
+
+.accordion__marker {
+	content: url(./list-arrow-right.svg);
+	display: inline-block;
+	width: 20px;
+	transform: rotate(0);
+	transform-origin: 0.2em 50%;
+	transition: transform 0.2s ease;
+}
+
+.accordion__details[open] .accordion__marker {
+	transform: rotate(90deg);
+}
