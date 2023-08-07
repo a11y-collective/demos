@@ -1,0 +1,200 @@
+:root {
+	--base-50: #fff; /* Light */
+	--base-100: #f5f5f5;
+	--base-200: #e5e5e5;
+	--base-300: #d4d4d4;
+	--base-400: #a3a3a3;
+	--base-500: #737373;
+	--base-600: #525252;
+	--base-700: #404040;
+	--base-800: #262626;
+	--base-900: #19133e; /* Default */
+	--base-950: #0a0a0a;
+	--base: var(--base-900);
+
+	--blue-50: #e6eaf3;
+	--blue-100: #bcbaff;
+	--blue-200: #9491ff;
+	--blue-300: #6c68ff;
+	--blue-400: #4440ff;
+	--blue-500: #1d17ff;
+	--blue-600: #0600ed; /* Default */
+	--blue-700: #0500b5;
+	--blue-800: #03007d;
+	--blue-900: #020045;
+	--blue-950: #010029;
+	--blue: var(--blue-600);
+
+	--red-50: #fefbfb; /* Light */
+	--red-100: #fcd9e1;
+	--red-200: #f8b4c3;
+	--red-300: #f58fa5;
+	--red-400: #f16986;
+	--red-500: #ee4468;
+	--red-600: #ea1f4a;
+	--red-700: #cd133b; /* Default */
+	--red-800: #9a0e2c;
+	--red-900: #66091d;
+	--red-950: #4d0716;
+	--red: var(--red-700);
+
+	--content: 842px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Arvo", serif;
+	font-weight: 700;
+	color: var(--base);
+}
+
+body {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	color: var(--base);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border: 5px solid var(--base-50);
+	background: var(--base-50);
+	margin: 0px;
+}
+
+header,
+main {
+	background-color: var(--red-50);
+}
+
+h1 {
+	margin: 7% auto;
+	padding-inline: 4%;
+	max-width: var(--content);
+	font-size: 32px;
+	font-weight: 700;
+}
+
+footer {
+	background-color: var(--blue);
+	color: var(--base-50);
+	padding: 2% 10%;
+}
+
+footer a {
+	color: var(--base-50);
+	text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus {
+	text-decoration: none;
+}
+
+/* Set a maximum width for the content */
+.entry-content {
+	max-width: var(--content); /* Adjust this value as needed */
+	margin: 5% auto;
+	padding-inline: 4%;
+}
+
+/* Set the default font size and line height for the content */
+.entry-content {
+	font-size: 18px; /* Base font size */
+	line-height: 1.6;
+}
+
+/* Style headings inside the entry-content */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: 1.5em;
+	margin-bottom: 0.8em; /* Adjust spacing between headings and content */
+}
+
+/* Style paragraphs inside the entry-content */
+.entry-content p {
+	margin-bottom: 1.2em; /* Adjust spacing between paragraphs */
+}
+
+/* Style links inside the entry-content */
+.entry-content a {
+	color: var(--blue-400); /* Change this color to suit your design */
+	text-decoration: none;
+}
+
+/* Hover and focus styles for anchor links */
+.entry-content a:hover,
+.entry-content a:focus {
+	text-decoration: underline;
+}
+
+/* Style the footer section */
+.entry-content__footer {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 2px solid var(--blue); /* Add a separator line at the top */
+}
+
+/* Style footer paragraphs */
+.entry-content__footer p {
+	margin: 0;
+}
+
+.entry-content__link {
+	display: inline-flex;
+	margin-top: 1.6em;
+	margin-bottom: 1em;
+	gap: 10px;
+	align-items: center;
+}
+
+.entry-content__link svg {
+	width: 20px;
+	height: 20px;
+}
+
+/* Style any other elements inside the entry-content as needed */
+.entry-content ul,
+.entry-content ol {
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
+/* Style images inside the entry-content */
+.entry-content img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style blockquotes inside the entry-content */
+.entry-content blockquote {
+	margin: 1.5em 0;
+	padding: 0 1em;
+	border-left: 3px solid var(--blue);
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		gap: 10px;
+		border-width: 10px;
+	}
+
+	.entry-content {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 48px;
+		line-height: 1.33;
+	}
+}
