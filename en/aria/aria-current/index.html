@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>aria-current</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/lesson.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./script.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				aria-current
+			</h1>
+		</header>
+
+		<main>
+			<div class="entry-content">
+				<h2>aria-current="true"</h2>
+				<ul>
+					<li><a href="#" aria-current="true" class="active">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<h2>aria-current="page"</h2>
+				<ul>
+					<li><a href="#" aria-current="page" class="active">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<h2>Nested menu</h2>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/" aria-current="true" class="active">Services</a>
+						<ul>
+							<li><a href="#" aria-current="page" class="active">Web design</a></li>
+							<li><a href="#">Web development</a></li>
+							<li><a href="#">Web content</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<h2>Breadcrumbs</h2>
+
+				<ul class="breadcrumbs">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Advisory services</a></li>
+					<li aria-current="page">Covenant and Sustainability services</li>
+				</ul>
+
+				<ul class="breadcrumbs">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Advisory services</a></li>
+					<li aria-current="location">Covenant and Sustainability services</li>
+				</ul>
+
+				<h2>aria-current="date"</h2>
+
+				<table>
+					<caption>Calender September</caption>
+					<tr>
+						<th scope="col">Monday</th>
+						<th scope="col">Tuesday</th>
+						<th scope="col">Wednesday</th>
+						<th scope="col">Thursday</th>
+						<th scope="col">Friday</th>
+						<th scope="col">Saturday</th>
+						<th scope="col">Sunday</th>
+					</tr>
+					<tr>
+						<td colspan="4" aria-hidden="true"></td><td>1</td><td>2</td><td>3</td>
+					</tr>
+					<tr>
+						<td>4</td><td>5</td><td aria-current="date">6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+					</tr>
+					<tr>
+						<td aria-selected="true">11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+					</tr>
+					<tr>
+						<td>18</td><td>19</td><td>20</td><td>21</td><td>21</td><td>22</td><td>23</td>
+					</tr>
+					<tr>
+						<td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+					</tr>
+					<tr>
+						<td>31</td><td colspan="6" aria-hidden="true"></td>
+					</tr>
+				</table>
+
+
+				<h2>aria-current="time"</h2>
+
+				<p>It doesn't always work.</p>
+
+				<label for="coffee">When do you drink your first cup of coffee in the morning</label>
+				<select id="coffee">
+					<option>6AM</option>
+					<option>7AM</option>
+					<option>8AM</option>
+					<option aria-current="time">9AM</option>
+					<option>10AM</option>
+					<option>11AM</option>
+					<option>12AM</option>
+					<option>I don't drink coffee</option>
+				</select>
+
+				<p>Which element to add and does the CSS work?</p>
+
+				<fieldset>
+					<legend>When do you drink your first cup of coffee in the morning</legend>
+					<input type="radio" id="time-6am" name="time"> <label for="time-6am">6AM</label>
+					<input type="radio" id="time-7am" name="time"> <label for="time-7am">7AM</label>
+					<input type="radio" id="time-8am" name="time"> <label for="time-8am">8AM</label>
+					<input type="radio" id="time-9am" name="time"> <label for="time-9am" aria-current="time">9AM</label>
+					<input type="radio" id="time-10am" aria-current="time" name="time"> <label for="time-10am">10AM</label>
+					<input type="radio" id="time-11am" name="time"> <label for="time-11am">11AM</label>
+					<input type="radio" id="time-12am" name="time"> <label for="time-12am">12AM</label>
+					<input type="radio" id="time-no-coffee" name="time"> <label for="time-no-coffee">I don't drink coffee</label>
+				</fieldset>
+
+
+				<div class="entry-content__footer">
+
+					<p>
+						<a href="../index.html" class="entry-content__link">
+							<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									aria-hidden="true"
+							>
+								<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+								/>
+							</svg>
+							Back to index
+						</a>
+					</p>
+				</div>
+
+
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
