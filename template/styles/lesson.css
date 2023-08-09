@@ -65,7 +65,7 @@ body {
 	gap: 5px;
 	border: 5px solid var(--base-50);
 	background: var(--base-50);
-	margin: 0px;
+	margin: 0;
 }
 
 header,
@@ -129,13 +129,13 @@ footer a:focus {
 /* Style links inside the entry-content */
 .entry-content a {
 	color: var(--blue-400); /* Change this color to suit your design */
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 /* Hover and focus styles for anchor links */
 .entry-content a:hover,
 .entry-content a:focus {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* Style the footer section */
