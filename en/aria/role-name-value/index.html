@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Role, name and value</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/lesson.css" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				Role, name and value
+			</h1>
+		</header>
+
+		<main>
+
+			<div class="entry-content">
+				<h2>Lists</h2>
+
+				<ul>
+					<li>One</li>
+					<li>Two</li>
+					<li>Three</li>
+				</ul>
+
+				<ol>
+					<li>One</li>
+					<li>Two</li>
+					<li>Three</li>
+				</ol>
+
+				<h2>Links</h2>
+
+				<ul>
+					<li><a href="https://twitter.com">Twitter</a></li>
+					<li><a href="https://facebook.com">Facebook</a></li>
+					<li><a href="https://instagram.com">Instagram</a></li>
+					<li><a href="https://linkedin.com">LinkedIn</a></li>
+				</ul>
+
+				<h2>Form controls</h2>
+
+				<form class="block">
+
+					<div class="form-block">
+						<label for="name1">Your name</label><br />
+						<input id="name1" type="text" autocomplete="name">
+					</div>
+
+					<div class="form-block">
+						<label for="amount">How many cookies?</label><br />
+						<select name="amount" id="amount">
+							<option value="one">One</option>
+							<option value="two">Two</option>
+							<option value="three">Three</option>
+							<option value="four">Four</option>
+						</select>
+					</div>
+
+					<fieldset class="form-block">
+						<legend>Select a T-shirt size</legend>
+						<input id="rb-s" checked="checked" name="size" type="radio" value="small" /><label for="rb-s">Small</label>
+						<input id="rb-m" name="size" type="radio" value="medium" /><label for="rb-m">Medium</label>
+						<input id="rb-l" name="size" type="radio" value="large" /><label for="rb-l">Large</label>
+						<input id="rb-e" name="size" type="radio" value="extra large" /><label for="rb-e">Extra large</label>
+					</fieldset>
+
+					<fieldset class="form-block">
+						<legend>What is your size?</legend>
+						<input id="cb-s" name="size" type="checkbox" value="small" /><label for="cb-s">Small</label>
+						<input id="cb-m" name="size" type="checkbox" value="medium" /><label for="cb-m">Medium</label>
+						<input id="cb-l" name="size" type="checkbox" value="large" /><label for="cb-l">Large</label>
+						<input id="cb-e" name="size" type="checkbox" value="extra large" /><label for="cb-e">Extra large</label>
+					</fieldset>
+
+					<button>Send!</button>
+
+				</form>
+
+				<h2>Naming an image</h2>
+
+				<h3>On an image</h3>
+
+				<div class="block">
+					<p>No alt attribute:</p>
+					<img src="../assets/IMG_0123.jpg" style="width: 50%">
+
+					<p>Alt attribute with a value:</p>
+					<img src="../assets/IMG_0123.jpg" alt="A cat sleeping." style="width: 50%">
+
+					<p>Alt attribute with an empty value:</p>
+					<img src="../assets/IMG_0123.jpg" alt="" style="width: 50%">
+				</div>
+
+				<h2>Naming an emoji</h2>
+				<div class="block">
+
+					Tulip <pre>&amp;#127799;</pre>
+
+					<p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
+					<p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
+				</div>
+
+				<h3>Role=presentation on a table</h3>
+
+				<div class="block">
+					<table>
+						<caption>Basic HTML table</caption>
+						<tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
+						<tr><th scope="row">Dog</th><td>4</td></tr>
+						<tr><th scope="row">Cat</th><td>4</td></tr>
+						<tr><th scope="row">Chicken</th><td>2</td></tr>
+					</table>
+
+					<table role="presentation">
+						<caption>Same HTML table with role=presentation</caption>
+						<tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
+						<tr><th scope="row">Dog</th><td>4</td></tr>
+						<tr><th scope="row">Cat</th><td>4</td></tr>
+						<tr><th scope="row">Chicken</th><td>2</td></tr>
+					</table>
+				</div>
+
+				<form role="search" class="block">
+					<label for="s">Search</label>
+					<input id="s" name="search" autocomplete="off"><br />
+					<button>Search</button>
+				</form>
+
+
+				<h2>aria-required="true" vs required</h2>
+				<div class="block">
+					<form>
+
+						<div class="form-block">
+							<label for="name2">Your name (required)</label><br />
+							<input id="name2" type="text" autocomplete="name" required>
+						</div>
+
+						<div class="form-block">
+							<label for="email2">Your email (required)</label><br />
+							<input id="email2" type="text" autocomplete="email" required>
+						</div>
+
+						<button>Send!</button>
+
+					</form>
+
+				</div>
+
+				<div class="entry-content__footer">
+					<!-- Change entry content footer content -->
+					<p>
+						<a href="../index.html" class="entry-content__link">
+							<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									aria-hidden="true"
+							>
+								<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+								/>
+							</svg>
+							Back to index
+						</a>
+					</p>
+				</div>
+
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>

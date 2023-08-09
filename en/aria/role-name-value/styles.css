@@ -1,0 +1,26 @@
+/* Write your custom CSS here */
+
+/* Tooltip on emoji. */
+
+span.tooltip {
+    position: relative;
+}
+
+span.tooltip:hover::after,
+span.tooltip:focus::after{
+    content:attr(aria-label);
+    display:none;
+    position:absolute;
+    top:70%;
+    left:10px;
+    padding:0.5em;
+    white-space:nowrap;
+    overflow:visible;
+    color:#fff;
+    background-color: #1e97bc;
+}
+
+span.tooltip:hover::after,
+span.tooltip:focus::after {
+    display:block
+}
