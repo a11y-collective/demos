@@ -1,0 +1,209 @@
+:root {
+	--base-50: #fff; /* Light */
+	--base-100: #f5f5f5;
+	--base-200: #e5e5e5;
+	--base-300: #d4d4d4;
+	--base-400: #a3a3a3;
+	--base-500: #737373;
+	--base-600: #525252;
+	--base-700: #404040;
+	--base-800: #262626;
+	--base-900: #19133e; /* Default */
+	--base-950: #0a0a0a;
+	--base: var(--base-900);
+
+	--blue-50: #e6eaf3;
+	--blue-100: #bcbaff;
+	--blue-200: #9491ff;
+	--blue-300: #6c68ff;
+	--blue-400: #4440ff;
+	--blue-500: #1d17ff;
+	--blue-600: #0600ed; /* Default */
+	--blue-700: #0500b5;
+	--blue-800: #03007d;
+	--blue-900: #020045;
+	--blue-950: #010029;
+	--blue: var(--blue-600);
+
+	--red-50: #fefbfb; /* Light */
+	--red-100: #fcd9e1;
+	--red-200: #f8b4c3;
+	--red-300: #f58fa5;
+	--red-400: #f16986;
+	--red-500: #ee4468;
+	--red-600: #ea1f4a;
+	--red-700: #cd133b; /* Default */
+	--red-800: #9a0e2c;
+	--red-900: #66091d;
+	--red-950: #4d0716;
+	--red: var(--red-700);
+
+	--content: 842px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Arvo", serif;
+	font-weight: 700;
+	color: var(--base);
+}
+
+body {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	color: var(--base);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border: 5px solid var(--base-50);
+	background: var(--base-50);
+	margin: 0px;
+}
+
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		border: 10px solid var(--base-50);
+		gap: 10px;
+	}
+}
+
+.hero {
+	display: flex;
+	padding: 40px 20px;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: var(--red-50);
+}
+
+.hero__title {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.hero__logo {
+	width: 150px;
+	height: auto;
+}
+
+.main {
+	display: flex;
+	padding-block: 40px;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	background-color: var(--red-50);
+}
+
+.main__navigation h2 {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.main__navigation ol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	padding-left: 0;
+	margin-left: 10px;
+}
+
+.main__navigation li {
+	font-family: Arvo, sans-serif; /* Use a different font-family for the list items */
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.main__navigation li::marker {
+	color: var(--red);
+}
+
+.main__navigation a {
+	color: var(--blue);
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	padding-left: 20px;
+}
+
+/* Hover and Focus effect */
+.main__navigation a:hover,
+.main__navigation a:focus {
+	text-decoration: none;
+}
+
+.main__footer {
+	border-top: 2px solid var(--blue);
+	padding-top: 20px;
+}
+
+.footer {
+	background-color: var(--blue);
+	color: var(--base-50);
+	padding: 20px 10%;
+}
+
+.footer a {
+	color: var(--base-50);
+	text-decoration: underline;
+}
+
+.footer a:hover,
+.footer a:focus {
+	text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (min-width: 768px) {
+	/* For screens with a minimum width of 768px (tablets and larger) */
+	.hero {
+		padding: 60px 15%;
+		gap: 50px;
+		flex-direction: row;
+	}
+
+	.hero__title {
+		font-size: 48px;
+		line-height: 1.33;
+	}
+
+	.hero__logo {
+		width: 200px;
+	}
+
+	.main {
+		padding-block: 64px;
+	}
+
+	.main__navigation h2 {
+		font-size: 32px;
+		line-height: 1.13;
+	}
+
+	.main__navigation ol {
+		gap: 24px;
+	}
+
+	.main__navigation li {
+		font-size: 18px;
+	}
+}
