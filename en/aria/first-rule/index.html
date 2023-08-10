@@ -17,51 +17,55 @@
 
 	<body>
 		<header>
-			<h1>
-				First rule of ARIA
-			</h1>
+			<h1>First rule of ARIA</h1>
 		</header>
 
 		<main>
 			<div class="entry-content">
 				<div class="block">
-					<p>Div with onclick:</p>
-					<pre>div onclick="showAlert()"</pre>
-					<div onclick="showAlert()">Show alert</div>
+					<p>Div with class that'll trigger alert:</p>
+					<pre>div class="js-alert"</pre>
+					<div class="js-alert">Show alert</div>
 				</div>
 
 				<div class="block">
 					<p>Add CSS:</p>
-					<pre>div onclick="showAlert()" <br />class="button"</pre>
-					<div role="button" class="button" onclick="showAlert()">Show alert</div>
+					<pre>div class="js-alert button"</pre>
+					<div class="js-alert button">Show alert</div>
 				</div>
 
 				<div class="block">
 					<p>Add role="button":</p>
-					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"</pre>
-					<div class="button" role="button" onclick="showAlert()">Show alert</div>
+					<pre>div class="js-alert button"<br />role="button"</pre>
+					<div class="js-alert button" role="button">Show alert</div>
 				</div>
 
 				<div class="block">
 					<p>Add tabindex=0:</p>
-					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"</pre>
-					<div class="button" role="button" tabindex="0" onclick="showAlert()">Show alert</div>
+					<pre>div class="js-alert button"<br />role="button"<br />tabindex="0"</pre>
+					<div class="js-alert button" role="button" tabindex="0">
+						Show alert
+					</div>
 				</div>
 
 				<div class="block">
-					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"<br />onkeypress="showAlert()</pre>
-					<div class="button" role="button" tabindex="0" onclick="showAlert()" onkeypress="showAlert()">Show alert</div>
-				</div>
-
-				<div class="block">
-					<p>And if you have a toggle button you also can add aria-pressed to tell a screen reader it's a toggle.</p>
-					<p>See for an example of aria-pressed MDN <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role">ARIA: button role</a>.</p>
+					<p>
+						And if you have a toggle button you also can add
+						aria-pressed to tell a screen reader it's a toggle.
+					</p>
+					<p>
+						See for an example of aria-pressed MDN
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role"
+							>ARIA: button role</a
+						>.
+					</p>
 				</div>
 
 				<div class="block">
 					<p>Native HTML button and onclick:</p>
-					<pre>button onclick="showAlert()"</pre>
-					<button onclick="showAlert()">Show alert</button>
+					<pre>button class="js-alert"</pre>
+					<button class="js-alert">Show alert</button>
 				</div>
 
 				<div class="entry-content__footer">
@@ -69,27 +73,24 @@
 					<p>
 						<a href="../index.html" class="entry-content__link">
 							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								aria-hidden="true"
 							>
 								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
 								/>
 							</svg>
 							Back to index
 						</a>
 					</p>
 				</div>
-
-
 			</div>
-
 		</main>
 
 		<footer>
