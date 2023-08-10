@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>First rule of ARIA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/lesson.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./script.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				First rule of ARIA
+			</h1>
+		</header>
+
+		<main>
+			<div class="entry-content">
+				<div class="block">
+					<p>Div with onclick:</p>
+					<pre>div onclick="showAlert()"</pre>
+					<div onclick="showAlert()">Show alert</div>
+				</div>
+
+				<div class="block">
+					<p>Add CSS:</p>
+					<pre>div onclick="showAlert()" <br />class="button"</pre>
+					<div role="button" class="button" onclick="showAlert()">Show alert</div>
+				</div>
+
+				<div class="block">
+					<p>Add role="button":</p>
+					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"</pre>
+					<div class="button" role="button" onclick="showAlert()">Show alert</div>
+				</div>
+
+				<div class="block">
+					<p>Add tabindex=0:</p>
+					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"</pre>
+					<div class="button" role="button" tabindex="0" onclick="showAlert()">Show alert</div>
+				</div>
+
+				<div class="block">
+					<pre>div onclick="showAlert()" <br />class="button"<br />role="button"<br />tabindex="0"<br />onkeypress="showAlert()</pre>
+					<div class="button" role="button" tabindex="0" onclick="showAlert()" onkeypress="showAlert()">Show alert</div>
+				</div>
+
+				<div class="block">
+					<p>And if you have a toggle button you also can add aria-pressed to tell a screen reader it's a toggle.</p>
+					<p>See for an example of aria-pressed MDN <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role">ARIA: button role</a>.</p>
+				</div>
+
+				<div class="block">
+					<p>Native HTML button and onclick:</p>
+					<pre>button onclick="showAlert()"</pre>
+					<button onclick="showAlert()">Show alert</button>
+				</div>
+
+				<div class="entry-content__footer">
+					<!-- Change entry content footer content -->
+					<p>
+						<a href="../index.html" class="entry-content__link">
+							<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									aria-hidden="true"
+							>
+								<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+								/>
+							</svg>
+							Back to index
+						</a>
+					</p>
+				</div>
+
+
+			</div>
+
+		</main>
+
+		<footer>
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>

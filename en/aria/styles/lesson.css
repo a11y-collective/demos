@@ -176,6 +176,84 @@ footer a:focus {
 	display: block;
 }
 
+/* Style block inside the entry-content */
+.entry-content .block {
+	border: 2px solid var(--blue);
+	background-color: #fff;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+/* Style form-block inside the entry-content */
+.entry-content .form-block {
+	padding: 1em 0;
+	margin-bottom: 1em;
+}
+
+/* Style table inside the entry-content */
+table {
+	border-collapse: collapse;
+	margin-bottom: 4em;
+}
+
+table caption, th {
+	text-align: left;
+	font-weight: bold;
+}
+
+th {
+	background-color: #ddd;
+}
+
+td, th {
+	padding: 0.5rem;
+	border: 1px solid #333;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+}
+
+/* Style button inside the entry-content */
+.entry-content .button,
+.entry-content button {
+	font-size: 1em;
+	padding: 12px 20px;
+	background-color: #0600ed;
+	border: 5px solid #0600ed;
+	border-radius: 60px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arvo,sans-serif;
+	font-weight: 700;
+	position: relative;
+	text-decoration: none;
+	text-transform: lowercase;
+	transition: .3s;
+}
+
+.entry-content .button:hover,
+.entry-content button:hover,
+.entry-content .button:focus,
+.entry-content button:focus {
+	background: #fff;
+	border-color: rgba(6,0,237,.3);
+	color: #0600ed;
+}
+
+
+
 /* Style blockquotes inside the entry-content */
 .entry-content blockquote {
 	margin: 1.5em 0;

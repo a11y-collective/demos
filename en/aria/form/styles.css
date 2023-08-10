@@ -1,0 +1,75 @@
+
+.form__summary {
+    padding: 20px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.form__summary li {
+    margin-block: 10px;
+}
+
+.form__validation {
+    display: none;
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(157, 12, 12);
+}
+
+.form__data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__name {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40%;
+}
+
+.form__email {
+    flex: 1 0 100%;
+}
+
+.form label,
+.form input {
+    display: block;
+}
+
+.form input[aria-invalid="true"] {
+    margin-bottom: 0;
+}
+
+.form input[aria-invalid="true"] + .form__validation {
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    height: 50px;
+    padding-inline: 1em;
+    border: 1px solid #666;
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+}
+
+.form label {
+    margin-bottom: 0.5em;
+}
+
+.form [type="submit"] {
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+@media (min-width: 550px) {
+    .form__data {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+

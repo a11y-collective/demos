@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-
+<html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="robots" content="noindex, nofollow">
-		<title>Lessons ARIA</title>
-		<link href="https://fonts.googleapis.com/css?family=Arvo%7CIBM+Plex+Sans&amp;display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../../stylesheet.css" type="text/css" media="all">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masterclass ARIA explained, demos</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital@0;1&wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/index.css" />
 	</head>
 
 	<body>
+		<div class="hero">
+			<h1 class="hero__title">Masterclass ARIA explained, demos</h1>
+			<img
+				class="hero__logo"
+				src="assets/logo.jpg"
+				alt="The a11y Collective Logo"
+			/>
+		</div>
 
-		<header>
-			<h1>Lessons ARIA</h1>
-		</header>
+		<main class="main">
+			<div class="main__navigation container">
+				<h2>Course lessons</h2>
+				<ol>
+					<li><a href="first-rule/index.html">First Rule of ARIA</a></li>
+					<li><a href="role-name-value/index.html">Role, name, value</a></li>
+					<li><a href="aria-current/index.html">aria-current</a></li>
+					<li><a href="aria-expanded/index.html">aria-expanded</a> TODO JS</li>
+					<li><a href="accordion/index.html">accordeon</a></li>
+					<li><a href="accessible-names/index.html">Accessible names</a></li>
+					<li><a href="accessible-names-forms/index.html">Accessible names in forms</a></li>
+					<li><a href="accessible-names-links/index.html">Accessible names in links</a></li>
+					<li><a href="dynamic-changes/index.html">Dynamic changes</a> TODO JS</li>
+					<li><a href="form/index.html">Feedback in forms</a> TODO JS</li>
+				</ol>
+			</div>
 
-		<main>
-			<p><strong>Note</strong>: these are HTML5 examples only.</p>
-			<ul >
-				<li><a href="first-rule.html">First Rule of ARIA</a></li>
-				<li><a href="role-name-value.html">Role, name, value</a></li>
-				<li><a href="accessible-names-links.html">Accessible names in links</a></li>
-				<li><a href="accessible-names-forms.html">Accessible names in forms</a></li>
-				<li><a href="accordion.html">Accordion</a> </li>
-				<li><a href="aria-expanded.html">aria-expanded</a></li>
-				<li><a href="hidden.html">Hidden content</a></li>
-				<li><a href="forms.html">Forms</a></li>
-				<li><a href="search.html">Search</a></li>
-				<li><a href="dynamic-changes.html">Dynamic changes</a></li>
-				<li><a href="tooltip.html">Tooltip</a></li>
-			</ul>
+			<div class="main__footer container">
+				<p>
+					These pages are used for workshops & courses of The A11Y
+					Collective.
+				</p>
+			</div>
 		</main>
 
+		<footer class="footer">
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
 	</body>
-
 </html>
