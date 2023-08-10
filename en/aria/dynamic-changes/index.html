@@ -17,57 +17,58 @@
 
 	<body>
 		<header>
-			<h1>
-				Dynamic changes
-			</h1>
+			<h1>Dynamic changes</h1>
 		</header>
 
 		<main>
 			<div class="entry-content">
-
-				<p>TODO: add JS to count characters, see for a working example: https://a11y-collective.github.io/demos/en/aria/dynamic-changes.html, JA in https://a11y-collective.github.io/demos/en/js/dynamic.js</p>
+				<p>
+					TODO: add JS to count characters, see for a working example:
+					https://a11y-collective.github.io/demos/en/aria/dynamic-changes.html,
+					JA in
+					https://a11y-collective.github.io/demos/en/js/dynamic.js
+				</p>
 
 				<h2>aria-live</h2>
 
 				<form class="form-chars-remaining">
-
 					<label for="message">Your Message:</label><br />
-					<textarea id="message" aria-describedby="chars-remaining"></textarea>
+					<textarea
+						id="message"
+						class="js-message"
+						aria-describedby="chars-remaining"
+					></textarea>
 
 					<p id="chars-remaining">
-	                	<span id="live-region-text">
-	                    	<span class="count">150</span> characters remaining
-	                	</span>
+						<span id="live-region-text">
+							<span class="js-count">150</span> characters
+							remaining
+						</span>
 						of 150 characters
 					</p>
-
 				</form>
 
-
 				<div class="entry-content__footer">
-
 					<p>
 						<a href="../index.html" class="entry-content__link">
 							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								aria-hidden="true"
 							>
 								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
 								/>
 							</svg>
 							Back to index
 						</a>
 					</p>
 				</div>
-
-
 			</div>
 		</main>
 
