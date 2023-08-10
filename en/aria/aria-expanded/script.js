@@ -1,2 +1,1 @@
-// Write your custom JavaScript code here.
-``;
+// Write your custom JavaScript code here...

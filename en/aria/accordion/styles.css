@@ -1,1 +1,18 @@
 /* Write your custom CSS here */
+.panel[aria-hidden="true"] {
+	display: none;
+}
+
+button.trigger {
+	border-radius: 0;
+}
+
+.trigger-icon {
+	display: inline-block;
+	margin-left: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.trigger[aria-expanded="true"] .trigger-icon {
+	transform: rotate(180deg);
+}
