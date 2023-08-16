@@ -227,7 +227,7 @@ th {
 }
 
 /* Style button inside the entry-content */
-.entry-content > .button {
+.entry-content .button {
 	font-size: 1em;
 	padding: 12px 20px;
 	background-color: #0600ed;

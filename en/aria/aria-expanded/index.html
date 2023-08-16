@@ -17,56 +17,53 @@
 
 	<body>
 		<header>
-			<h1>
-				aria-expanded
-			</h1>
+			<h1>aria-expanded</h1>
 		</header>
 
 		<main>
 			<div class="entry-content">
-				 <p>TODO: add JS for open/close and toggle expanded value</p>
-
+				<p>TODO: add JS for open/close and toggle expanded value</p>
 
 				<h2>Is the menu open or closed</h2>
 
-				<nav aria-label="Menu">
-					<button aria-expanded="false" class="expandable">Menu</button>
-					<div hidden class="expanded-content">
+				<nav class="menu" aria-label="Menu">
+					<button class="button js-toggle" aria-expanded="false">
+						Menu
+					</button>
+					<div class="menu__content js-content" aria-hidden="true">
 						<ul>
 							<li><a href="https://twitter.com">Twitter</a></li>
 							<li><a href="https://facebook.com">Facebook</a></li>
-							<li><a href="https://instagram.com">Instagram</a></li>
+							<li>
+								<a href="https://instagram.com">Instagram</a>
+							</li>
 							<li><a href="https://linkedin.com">LinkedIn</a></li>
 						</ul>
 					</div>
 				</nav>
 
 				<div class="entry-content__footer">
-
 					<p>
 						<a href="../index.html" class="entry-content__link">
 							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								aria-hidden="true"
 							>
 								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
 								/>
 							</svg>
 							Back to index
 						</a>
 					</p>
 				</div>
-
-
 			</div>
-
 		</main>
 
 		<footer>
