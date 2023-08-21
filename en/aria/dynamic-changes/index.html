@@ -32,13 +32,12 @@
 						aria-describedby="chars-remaining"
 					></textarea>
 
-					<p id="chars-remaining">
-						<span id="live-region-text">
-							<span class="js-count">150</span> characters
-							remaining
-						</span>
+					<p id="chars-remaining" aria-hidden="true">
+						<span class="js-count">150</span> characters remaining
 						of 150 characters
 					</p>
+
+					<div class="js-aria-live screen-reader-text"></div>
 				</form>
 
 				<div class="entry-content__footer">
