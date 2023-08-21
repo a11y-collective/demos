@@ -17,14 +17,11 @@
 
 	<body>
 		<header>
-			<h1>
-				Accessible names
-			</h1>
+			<h1>Accessible names</h1>
 		</header>
 
 		<main>
 			<div class="entry-content">
-
 				<h2>Adding information with aria-label</h2>
 
 				<p>Name a nav, a section or a list with aria-label:</p>
@@ -59,46 +56,59 @@
 					<p>[list of the latest news items]</p>
 				</section>
 
-				<h2>Add info with aria-labelledby</h2>
+				<h2>Add info with aria-describedby</h2>
 
 				<p>Please make a donation</p>
-				<button aria-describedby="donate-description">
-					Donate
-				</button>
+				<button aria-describedby="donate-description">Donate</button>
 				<p id="donate-description">We hope for 10&euro; or more.</p>
 
+				<h2>Aria-describedby for live updates</h2>
+				<form>
+					<label for="message">Your Message:</label><br />
+					<textarea
+						id="message"
+						class="js-message"
+						aria-describedby="chars-remaining"
+					></textarea>
+
+					<p id="chars-remaining">
+						<span class="js-count">150</span> characters remaining
+						of 150 characters
+					</p>
+
+					<div class="js-aria-live screen-reader-text"></div>
+				</form>
 
 				<h2>Override link- and button text</h2>
 
-				<p>aria-labels on links and buttons override all text inside for a screen reader.</p>
+				<p>
+					aria-labels on links and buttons override all text inside
+					for a screen reader.
+				</p>
 				<p>Link: <a href="#" aria-label="No">Yes</a></p>
 				<p>Button: <button aria-label="Delete">Add</button></p>
 
-
 				<div class="entry-content__footer">
-
 					<p>
 						<a href="../index.html" class="entry-content__link">
 							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								aria-hidden="true"
 							>
 								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
 								/>
 							</svg>
 							Back to index
 						</a>
 					</p>
 				</div>
-
-
 			</div>
 		</main>
 
