@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aria-live</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/lesson.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./script.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Aria-live</h1>
+		</header>
+
+		<main>
+			<div class="entry-content">
+				<h2>A chat bot made with aria-live</h2>
+				<div class="js-chat" aria-live="polite"></div>
+				<label for="message-input">Write a message</label>
+				<input
+					id="message-input"
+					type="text"
+					class="js-input input"
+					placeholder="I like elephants..."
+				/>
+				<button class="js-submit button">Send Message</button>
+
+				<div class="entry-content__footer">
+					<!-- Change entry content footer content -->
+					<p>
+						<a href="../index.html" class="entry-content__link">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+								/>
+							</svg>
+							Back to index
+						</a>
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
