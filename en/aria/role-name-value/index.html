@@ -138,6 +138,13 @@
 					<button>Search</button>
 				</form>
 
+				<h2>aria-hidden="true" vs hidden</h2>
+				<div class="block">
+
+					<p aria-hidden="true">This text is aria-hidden.</p>
+					<p hidden>This text is hidden.</p>
+
+				</div>
 
 				<h2>aria-required="true" vs required</h2>
 				<div class="block">
@@ -158,6 +165,19 @@
 					</form>
 
 				</div>
+
+				<h2>The accessible name of an iframe is the title attribute</h2>
+				<div class="block">
+					<iframe
+							width="425"
+							height="350"
+							title="OpenStreetMap Rotterdam"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=4.43774700164795%2C51.899429061028165%2C4.477229118347169%2C51.92182610026436&amp;layer=mapnik"
+					>
+
+					</iframe>
+				</div>
+
 
 				<div class="entry-content__footer">
 					<!-- Change entry content footer content -->
