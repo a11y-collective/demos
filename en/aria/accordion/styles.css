@@ -1,1 +1,36 @@
-/* Write your custom CSS here */
+.accordion-item {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.panel[aria-hidden="true"] {
+	display: none;
+}
+
+.panel {
+	display: block;
+	width: 100%;
+	padding: 16px;
+	background-color: white;
+}
+
+.trigger {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+	background-color: white;
+	padding: 16px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+}
+
+.trigger-icon {
+	display: inline-block;
+	margin-left: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.trigger[aria-expanded="true"] .trigger-icon {
+	transform: rotate(180deg);
+}

@@ -196,7 +196,8 @@ table {
 	margin-bottom: 4em;
 }
 
-table caption, th {
+table caption,
+th {
 	text-align: left;
 	font-weight: bold;
 }
@@ -205,7 +206,8 @@ th {
 	background-color: #ddd;
 }
 
-td, th {
+td,
+th {
 	padding: 0.5rem;
 	border: 1px solid #333;
 }
@@ -225,8 +227,7 @@ td, th {
 }
 
 /* Style button inside the entry-content */
-.entry-content .button,
-.entry-content button {
+.entry-content .button {
 	font-size: 1em;
 	padding: 12px 20px;
 	background-color: #0600ed;
@@ -235,24 +236,30 @@ td, th {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Arvo,sans-serif;
+	font-family: Arvo, sans-serif;
 	font-weight: 700;
 	position: relative;
 	text-decoration: none;
 	text-transform: lowercase;
-	transition: .3s;
+	transition: 0.3s;
 }
 
 .entry-content .button:hover,
-.entry-content button:hover,
-.entry-content .button:focus,
-.entry-content button:focus {
+.entry-content .button:focus {
 	background: #fff;
-	border-color: rgba(6,0,237,.3);
+	border-color: rgba(6, 0, 237, 0.3);
 	color: #0600ed;
 }
 
-
+.entry-content .input {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
 
 /* Style blockquotes inside the entry-content */
 .entry-content blockquote {

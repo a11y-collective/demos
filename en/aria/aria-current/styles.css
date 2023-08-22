@@ -9,8 +9,8 @@ td[aria-current]:not([aria-current="false"]) {
     border: 5px solid #333;
 }
 
-td[aria-selected]:not([aria-selected="false"]) {
-    color: #700;
+td.selected {
+    color: #eeeeee;
     background-color: #333333;
 }
 
