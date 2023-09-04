@@ -6,8 +6,8 @@ span.tooltip {
     position: relative;
 }
 
-span.tooltip:hover::after,
-span.tooltip:focus::after{
+span.tooltip::after,
+span.tooltip::after {
     content:attr(aria-label);
     display:none;
     position:absolute;
@@ -22,5 +22,5 @@ span.tooltip:focus::after{
 
 span.tooltip:hover::after,
 span.tooltip:focus::after {
-    display:block
+    display:block;
 }
