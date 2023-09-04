@@ -31,5 +31,5 @@ td, th {
 .breadcrumbs li:not(:last-child)::after {
     display: inline-block;
     margin: 0 .5em;
-    content: ">";
+    content: "|";
 }

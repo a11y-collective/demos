@@ -226,8 +226,10 @@ th {
 	word-wrap: normal;
 }
 
+
 /* Style button inside the entry-content */
-.entry-content .button {
+.entry-content .button,
+.entry-content button {
 	font-size: 1em;
 	padding: 12px 20px;
 	background-color: #0600ed;
@@ -244,16 +246,19 @@ th {
 	transition: 0.3s;
 }
 
+.entry-content button:hover,
+.entry-content button:focus,
 .entry-content .button:hover,
-.entry-content .button:focus {
+.entry-content .button:focus{
 	background: #fff;
 	border-color: rgba(6, 0, 237, 0.3);
 	color: #0600ed;
 }
 
-.entry-content .input {
+
+.entry-content input {
 	padding: 10px;
-	border: 2px solid #ccc;
+	border: 2px solid #757575;
 	border-radius: 5px;
 	font-size: 16px;
 	width: 100%;
