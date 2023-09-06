@@ -33,3 +33,12 @@ td, th {
     margin: 0 .5em;
     content: "|";
 }
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.steps li {
+    padding: 0 4em 0 0;
+}
