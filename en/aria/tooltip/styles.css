@@ -1,0 +1,101 @@
+/* Tooltips. */
+
+/* Tooltip on aria-label. */
+.has-tooltip {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.has-tooltip:hover,
+.has-tooltip:focus {
+    border: 1px solid #333;
+}
+.heart {
+    width: 2em;
+    height: 2em;
+    fill: #c00;
+}
+
+button[aria-label] {
+    position:relative
+}
+
+button[aria-label]::after {
+    content:attr(aria-label);
+    display:none;
+    position:absolute;
+    top:70%;
+    left:10px;
+    padding:0.5em;
+    white-space:nowrap;
+    overflow:visible;
+    color:#fff;
+    background-color: #1e97bc;
+}
+
+button[aria-label]:hover::after,
+button[aria-label]:focus::after {
+    display:block
+}
+
+/* Tooltip on aria-describedby. */
+.question-mark {
+    width: 2em;
+    height: 2em;
+}
+[role="tooltip"] {
+    display: none;
+}
+
+button:hover + [role="tooltip"],
+button:focus + [role="tooltip"] {
+    display: block;
+}
+
+.long-tooltip-container {
+    position:relative
+}
+
+[role="tooltip"] {
+    position:absolute;
+    top:0;
+    left:2em;
+    min-width: 20em;
+    max-width: 30em;
+    padding: 1em;
+    overflow:visible;
+    border: solid 1px #333;
+    background-color: #fefefe;
+}
+
+[role="tooltip"] img {
+    margin: 1em 0;
+}
+
+/* Tooltip on emoji. */
+
+span.tooltip {
+    position: relative;
+}
+
+span.tooltip:hover::after,
+span.tooltip:focus::after{
+    content:attr(aria-label);
+    display:none;
+    position:absolute;
+    top:70%;
+    left:10px;
+    padding:0.5em;
+    white-space:nowrap;
+    overflow:visible;
+    color:#fff;
+    background-color: #1e97bc;
+}
+
+span.tooltip:hover::after,
+span.tooltip:focus::after {
+    display:block
+}
+

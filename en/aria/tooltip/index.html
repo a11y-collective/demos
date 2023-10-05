@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tooltips</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="https://a11y-collective.github.io/demos/favicon.ico">
+		<link rel="stylesheet" href="../styles/lesson.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./script.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Tooltips</h1>
+		</header>
+
+		<main>
+			<div class="entry-content">
+				<h2>Short text: use aria-label</h2>
+
+				<div class="block">
+
+					<button
+							class="with-short-tooltip tooltip"
+							aria-label="Like my post">
+						<svg
+								aria-hidden="true"
+								focusable="false"
+								viewBox="0 0 20 20"
+								class="heart"
+								xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.38 1.77C17.43.68 16.12 0 14.67 0c-1.45 0-2.76.68-3.71 1.77-.41.47-.73 1.03-.99 1.64-.27-.61-.59-1.17-1-1.64C8.02.68 6.7 0 5.25 0 3.8 0 2.49.68 1.54 1.77.59 2.87 0 4.37 0 6.04c0 1.67.59 3.18 1.54 4.27L9.96 20l8.42-9.69c.95-1.09 1.54-2.6 1.54-4.27 0-1.67-.59-3.17-1.54-4.27"></path>
+						</svg>
+					</button>
+
+				</div>
+
+				<h2>Long text: use aria-describedby</h2>
+				<div class="block">
+
+
+
+					<div class="long-tooltip">
+						<button
+								onclick="toggleClass()"
+								class="with-long-tooltip tooltip"
+								aria-describedby="tooltip-2">
+							<img src="../assets/question-mark.png" alt="? Tell me more" class="question-mark">
+						</button>
+
+						<p id="tooltip-2" class="tooltip-descr" hidden>Tooltips with aria-describedby can contain markup such as
+							<strong>strong</strong> and <em>em</em> and even images <img src="../assets/IMG_0123.jpg" alt="Cat sleeping on the bed." width="100"></p>
+					</div>
+				</div>
+
+
+				<h2>Naming an emoji</h2>
+				<div class="block">
+
+					Tulip <pre>&amp;#127799;</pre>
+
+					<p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
+					<p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
+				</div>
+
+				<div class="entry-content__footer">
+					<p>
+						<a href="../index.html" class="entry-content__link">
+							<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									aria-hidden="true"
+							>
+								<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+								/>
+							</svg>
+							Back to index
+						</a>
+					</p>
+				</div>
+
+
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				Created by
+				<a href="https://www.a11y-collective.com/"
+					>The A11y Collective</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
