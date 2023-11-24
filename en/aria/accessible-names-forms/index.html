@@ -17,9 +17,7 @@
 
 	<body>
 		<header>
-			<h1>
-				Accessible names in forms
-			</h1>
+			<h1>Accessible names in forms</h1>
 		</header>
 
 		<main>
@@ -48,7 +46,10 @@
 				</form>
 
 				<h3>aria-label</h3>
-				<p>Disadvantage: you don't have a visible label. But it does give the form control an accessible name.</p>
+				<p>
+					Disadvantage: you don't have a visible label. But it does
+					give the form control an accessible name.
+				</p>
 				<form class="block">
 					<textarea aria-label="Your question"></textarea>
 				</form>
@@ -56,7 +57,10 @@
 				<h3>A placeholder and aria-label</h3>
 
 				<form class="block">
-					<textarea aria-label="Your question" placeholder="Describe your question."></textarea>
+					<textarea
+						aria-label="Your question"
+						placeholder="Describe your question."
+					></textarea>
 				</form>
 
 				<h3>Aria-labelledby</h3>
@@ -66,37 +70,49 @@
 				</form>
 
 				<h3>Aria-describedby</h3>
-				<p>Is additional to the label text, and is useful to add extra information.</p>
+				<p>
+					Is additional to the label text, and is useful to add extra
+					information.
+				</p>
 				<form class="block">
 					<label for="id-password">Your password</label><br />
-					<input class="input" type="password" id="id-password" aria-describedby="id-aria-describedby" autocomplete="off">
-					<p id="id-aria-describedby">Please use a password of minimal 8 characters.</p>
+					<input
+						class="input"
+						type="password"
+						id="id-password"
+						aria-describedby="id-aria-describedby"
+						autocomplete="off"
+					/>
+					<p id="id-aria-describedby">
+						Please use a password of minimal 8 characters.
+					</p>
 				</form>
 
 				<div class="entry-content__footer">
-
-					<p>
-						<a href="../index.html" class="entry-content__link">
-							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
-							>
-								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-								/>
-							</svg>
-							Back to index
-						</a>
-					</p>
+					<a href="../index.html" class="entry-content__link">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+							/>
+						</svg>
+						Back to index
+					</a>
+					<a
+						href="https://www.a11y-collective.com/courses/aria-explained/lessons/accessible-names/topics/name-form-controls/"
+						class="entry-content__link"
+					>
+						To course chapter
+					</a>
 				</div>
-
-
 			</div>
 		</main>
 
