@@ -51,13 +51,13 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Arvo", serif;
+	font-family: 'Arvo', serif;
 	font-weight: 700;
 	color: var(--base);
 }
 
 body {
-	font-family: "IBM Plex Sans", sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 	color: var(--base);
 	display: flex;
@@ -142,20 +142,34 @@ footer a:focus {
 .entry-content__footer {
 	margin-top: 2em;
 	padding-top: 1em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
 	border-top: 2px solid var(--blue); /* Add a separator line at the top */
 }
 
-/* Style footer paragraphs */
-.entry-content__footer p {
-	margin: 0;
-}
-
-.entry-content__link {
+.entry-content__footer .entry-content__link {
 	display: inline-flex;
 	margin-top: 1.6em;
 	margin-bottom: 1em;
 	gap: 10px;
 	align-items: center;
+	color: white;
+	background-color: var(--blue);
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 999px;
+	border: 3px solid var(--blue);
+	transition: background-color 250ms ease-in-out, color 250ms ease-in-out,
+		border-color 250ms ease-in-out;
+}
+
+.entry-content__link:hover,
+.entry-content__link:focus {
+	background-color: transparent;
+	color: var(--blue);
+	border-color: var(--blue-200);
 }
 
 .entry-content__link svg {
@@ -196,7 +210,8 @@ table {
 	margin-bottom: 4em;
 }
 
-table caption, th {
+table caption,
+th {
 	text-align: left;
 	font-weight: bold;
 }
@@ -205,7 +220,8 @@ th {
 	background-color: #ddd;
 }
 
-td, th {
+td,
+th {
 	padding: 0.5rem;
 	border: 1px solid #333;
 }
@@ -235,12 +251,12 @@ td, th {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: Arvo,sans-serif;
+	font-family: Arvo, sans-serif;
 	font-weight: 700;
 	position: relative;
 	text-decoration: none;
 	text-transform: lowercase;
-	transition: .3s;
+	transition: 250ms;
 }
 
 .entry-content .button:hover,
@@ -248,11 +264,9 @@ td, th {
 .entry-content .button:focus,
 .entry-content button:focus {
 	background: #fff;
-	border-color: rgba(6,0,237,.3);
+	border-color: var(--blue-200);
 	color: #0600ed;
 }
-
-
 
 /* Style blockquotes inside the entry-content */
 .entry-content blockquote {
