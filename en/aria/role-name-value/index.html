@@ -10,20 +10,21 @@
 			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" type="image/png" href="https://a11y-collective.github.io/demos/favicon.ico">
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://a11y-collective.github.io/demos/favicon.ico"
+		/>
 		<link rel="stylesheet" href="../styles/lesson.css" />
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
 		<header>
-			<h1>
-				Role, name and value
-			</h1>
+			<h1>Role, name and value</h1>
 		</header>
 
 		<main>
-
 			<div class="entry-content">
 				<h2>Lists</h2>
 
@@ -51,10 +52,14 @@
 				<h2>Form controls</h2>
 
 				<form class="block">
-
 					<div class="form-block">
 						<label for="name1">Your name</label><br />
-						<input class="input"  id="name1" type="text" autocomplete="name">
+						<input
+							class="input"
+							id="name1"
+							type="text"
+							autocomplete="name"
+						/>
 					</div>
 
 					<div class="form-block">
@@ -69,22 +74,62 @@
 
 					<fieldset class="form-block">
 						<legend>Select a T-shirt size</legend>
-						<input id="rb-s" checked="checked" name="size" type="radio" value="small" /><label for="rb-s">Small</label>
-						<input id="rb-m" name="size" type="radio" value="medium" /><label for="rb-m">Medium</label>
-						<input id="rb-l" name="size" type="radio" value="large" /><label for="rb-l">Large</label>
-						<input id="rb-e" name="size" type="radio" value="extra large" /><label for="rb-e">Extra large</label>
+						<input
+							id="rb-s"
+							checked="checked"
+							name="size"
+							type="radio"
+							value="small"
+						/><label for="rb-s">Small</label>
+						<input
+							id="rb-m"
+							name="size"
+							type="radio"
+							value="medium"
+						/><label for="rb-m">Medium</label>
+						<input
+							id="rb-l"
+							name="size"
+							type="radio"
+							value="large"
+						/><label for="rb-l">Large</label>
+						<input
+							id="rb-e"
+							name="size"
+							type="radio"
+							value="extra large"
+						/><label for="rb-e">Extra large</label>
 					</fieldset>
 
 					<fieldset class="form-block">
 						<legend>What is your size?</legend>
-						<input id="cb-s" name="size" type="checkbox" value="small" /><label for="cb-s">Small</label>
-						<input id="cb-m" name="size" type="checkbox" value="medium" /><label for="cb-m">Medium</label>
-						<input id="cb-l" name="size" type="checkbox" value="large" /><label for="cb-l">Large</label>
-						<input id="cb-e" name="size" type="checkbox" value="extra large" /><label for="cb-e">Extra large</label>
+						<input
+							id="cb-s"
+							name="size"
+							type="checkbox"
+							value="small"
+						/><label for="cb-s">Small</label>
+						<input
+							id="cb-m"
+							name="size"
+							type="checkbox"
+							value="medium"
+						/><label for="cb-m">Medium</label>
+						<input
+							id="cb-l"
+							name="size"
+							type="checkbox"
+							value="large"
+						/><label for="cb-l">Large</label>
+						<input
+							id="cb-e"
+							name="size"
+							type="checkbox"
+							value="extra large"
+						/><label for="cb-e">Extra large</label>
 					</fieldset>
 
 					<button class="button">Send!</button>
-
 				</form>
 
 				<h2>Naming an image</h2>
@@ -93,140 +138,211 @@
 
 				<div class="block">
 					<p>No alt attribute:</p>
-					<img src="../assets/IMG_0123.jpg" style="width: 50%">
+					<img src="../assets/IMG_0123.jpg" style="width: 50%" />
 
 					<p>Alt attribute with a value:</p>
-					<img src="../assets/IMG_0123.jpg" alt="A cat sleeping." style="width: 50%">
+					<img
+						src="../assets/IMG_0123.jpg"
+						alt="A cat sleeping."
+						style="width: 50%"
+					/>
 
 					<p>Alt attribute with an empty value:</p>
-					<img src="../assets/IMG_0123.jpg" alt="" style="width: 50%">
+					<img
+						src="../assets/IMG_0123.jpg"
+						alt=""
+						style="width: 50%"
+					/>
 				</div>
 
 				<h2>Naming an emoji</h2>
 				<div class="block">
+					Tulip
+					<pre>&amp;#127799;</pre>
 
-					Tulip <pre>&amp;#127799;</pre>
-
-					<p>Add role=img and an aria-label: <span role="img" aria-label="Tulip">&#127799;</span></p>
-					<p>Also give it a tooltip: <span role="img" aria-label="Tulip" tabindex="0" class="tooltip">&#127799;</span></p>
+					<p>
+						Add role=img and an aria-label:
+						<span role="img" aria-label="Tulip">&#127799;</span>
+					</p>
+					<p>
+						Also give it a tooltip:
+						<span
+							role="img"
+							aria-label="Tulip"
+							tabindex="0"
+							class="tooltip"
+							>&#127799;</span
+						>
+					</p>
 				</div>
 
 				<h3>Role=presentation on a table</h3>
 
 				<div class="block">
 					<table>
-						<caption>Basic HTML table</caption>
-						<tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
-						<tr><th scope="row">Dog</th><td>4</td></tr>
-						<tr><th scope="row">Cat</th><td>4</td></tr>
-						<tr><th scope="row">Chicken</th><td>2</td></tr>
+						<caption>
+							Basic HTML table
+						</caption>
+						<tr>
+							<th scope="col">Animal</th>
+							<th scope="col">Number of legs</th>
+						</tr>
+						<tr>
+							<th scope="row">Dog</th>
+							<td>4</td>
+						</tr>
+						<tr>
+							<th scope="row">Cat</th>
+							<td>4</td>
+						</tr>
+						<tr>
+							<th scope="row">Chicken</th>
+							<td>2</td>
+						</tr>
 					</table>
 
 					<table role="presentation">
-						<caption>Same HTML table with role=presentation</caption>
-						<tr><th scope="col">Animal</th><th scope="col">Number of legs</th></tr>
-						<tr><th scope="row">Dog</th><td>4</td></tr>
-						<tr><th scope="row">Cat</th><td>4</td></tr>
-						<tr><th scope="row">Chicken</th><td>2</td></tr>
+						<caption>
+							Same HTML table with role=presentation
+						</caption>
+						<tr>
+							<th scope="col">Animal</th>
+							<th scope="col">Number of legs</th>
+						</tr>
+						<tr>
+							<th scope="row">Dog</th>
+							<td>4</td>
+						</tr>
+						<tr>
+							<th scope="row">Cat</th>
+							<td>4</td>
+						</tr>
+						<tr>
+							<th scope="row">Chicken</th>
+							<td>2</td>
+						</tr>
 					</table>
 				</div>
 
 				<form role="search" class="block">
 					<div class="form-block">
 						<label for="s">Search</label><br />
-						<input class="input" id="s" name="search" autocomplete="off">
+						<input
+							class="input"
+							id="s"
+							name="search"
+							autocomplete="off"
+						/>
 					</div>
 					<button class="button">Search</button>
 				</form>
 
 				<h2>aria-hidden="true" vs hidden</h2>
 				<div class="block">
-
 					<p aria-hidden="true">This text is aria-hidden.</p>
 					<p hidden>This text is hidden.</p>
-
 				</div>
 
 				<h2>aria-required="true" vs required</h2>
 				<div class="block">
 					<h3>Example required</h3>
 					<form>
-
 						<div class="form-block">
-							<label for="name2">Your name (required)</label><br />
-							<input class="input" id="name2" type="text" autocomplete="name" required>
+							<label for="name2">Your name (required)</label
+							><br />
+							<input
+								class="input"
+								id="name2"
+								type="text"
+								autocomplete="name"
+								required
+							/>
 						</div>
 
 						<div class="form-block">
-							<label for="email2">Your email (required)</label><br />
-							<input class="input" id="email2" type="text" autocomplete="email" required>
+							<label for="email2">Your email (required)</label
+							><br />
+							<input
+								class="input"
+								id="email2"
+								type="text"
+								autocomplete="email"
+								required
+							/>
 						</div>
 
 						<button class="button">Send!</button>
-
 					</form>
-
 				</div>
 
 				<div class="block">
-
 					<h3>Example aria-required</h3>
 
 					<form>
-
 						<div class="form-block">
-							<label for="name3">Your name (required)</label><br />
-							<input class="input" id="name3" type="text" autocomplete="name" aria-required="true">
+							<label for="name3">Your name (required)</label
+							><br />
+							<input
+								class="input"
+								id="name3"
+								type="text"
+								autocomplete="name"
+								aria-required="true"
+							/>
 						</div>
 
 						<div class="form-block">
-							<label for="email3">Your email (required)</label><br />
-							<input class="input" id="email3" type="text" autocomplete="email" aria-required="true">
+							<label for="email3">Your email (required)</label
+							><br />
+							<input
+								class="input"
+								id="email3"
+								type="text"
+								autocomplete="email"
+								aria-required="true"
+							/>
 						</div>
 
 						<button class="button">Send!</button>
-
 					</form>
-
 				</div>
-
 
 				<h2>The accessible name of an iframe is the title attribute</h2>
 				<div class="block">
 					<iframe
-							width="425"
-							height="350"
-							title="OpenStreetMap Rotterdam"
-							src="https://www.openstreetmap.org/export/embed.html?bbox=4.43774700164795%2C51.899429061028165%2C4.477229118347169%2C51.92182610026436&amp;layer=mapnik"
+						width="425"
+						height="350"
+						title="OpenStreetMap Rotterdam"
+						src="https://www.openstreetmap.org/export/embed.html?bbox=4.43774700164795%2C51.899429061028165%2C4.477229118347169%2C51.92182610026436&amp;layer=mapnik"
 					>
-
 					</iframe>
 				</div>
 
-
 				<div class="entry-content__footer">
-					<!-- Change entry content footer content -->
-					<p>
-						<a href="../index.html" class="entry-content__link">
-							<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									aria-hidden="true"
-							>
-								<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-								/>
-							</svg>
-							Back to index
-						</a>
-					</p>
+					<a href="../index.html" class="entry-content__link">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+							/>
+						</svg>
+						Back to index
+					</a>
+					<a
+						href="https://www.a11y-collective.com/courses/aria-explained/lessons/what-is-aria/topics/the-accessibility-tree/"
+						class="entry-content__link"
+					>
+						To course chapter
+					</a>
 				</div>
-
 			</div>
 		</main>
 

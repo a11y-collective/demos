@@ -51,13 +51,13 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Arvo", serif;
+	font-family: 'Arvo', serif;
 	font-weight: 700;
 	color: var(--base);
 }
 
 body {
-	font-family: "IBM Plex Sans", sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 	color: var(--base);
 	display: flex;
@@ -138,24 +138,37 @@ footer a:focus {
 	text-decoration: none;
 }
 
-/* Style the footer section */
 .entry-content__footer {
 	margin-top: 2em;
 	padding-top: 1em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
 	border-top: 2px solid var(--blue); /* Add a separator line at the top */
 }
 
-/* Style footer paragraphs */
-.entry-content__footer p {
-	margin: 0;
-}
-
-.entry-content__link {
+.entry-content__footer .entry-content__link {
 	display: inline-flex;
 	margin-top: 1.6em;
 	margin-bottom: 1em;
 	gap: 10px;
 	align-items: center;
+	color: white;
+	background-color: var(--blue);
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 999px;
+	border: 3px solid var(--blue);
+	transition: background-color 250ms ease-in-out, color 250ms ease-in-out,
+		border-color 250ms ease-in-out;
+}
+
+.entry-content__link:hover,
+.entry-content__link:focus {
+	background-color: transparent;
+	color: var(--blue);
+	border-color: var(--blue-200);
 }
 
 .entry-content__link svg {
@@ -226,7 +239,6 @@ th {
 	word-wrap: normal;
 }
 
-
 /* Style button inside the entry-content */
 .entry-content .button {
 	font-size: 1em;
@@ -246,12 +258,11 @@ th {
 }
 
 .entry-content .button:hover,
-.entry-content .button:focus{
+.entry-content .button:focus {
 	background: #fff;
 	border-color: rgba(6, 0, 237, 0.3);
 	color: #0600ed;
 }
-
 
 .entry-content .input,
 .entry-content textarea {
