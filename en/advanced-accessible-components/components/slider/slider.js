@@ -86,7 +86,7 @@ sliderTabs.forEach( (tab, i) => {
 })
 
 sliderNav.addEventListener('keydown', event => {
-	if (event.key === "Tab") {
+	if (event.key === "Tab" && !event.shiftKey) {
 		event.preventDefault();
 		controls[0].focus();
 		return;
